@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
           has_many :items
-          # has_many :comments
+          has_many :comments
         
           with_options presence: true do
             validates :nickname, format: { with: /\A[a-z0-9]+\z/i, message: 'は半角文字で入力してください' }

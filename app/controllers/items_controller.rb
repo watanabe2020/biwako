@@ -25,6 +25,8 @@ class ItemsController < ApplicationController
 
   def show
     @items = Item.all.order('created_at DESC')
+    @comment = Comment.new
+    @comments = @item.comments.includes(:user)
   end
 
   def update

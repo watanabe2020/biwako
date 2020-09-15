@@ -64,7 +64,7 @@
   <%# /商品の概要 %>
 
      <%# <p class='or-text'>or</p> %>
-    <%= link_to '削除', "#", method: :delete, class:'item-destroy' %>
+<%= link_to '削除', item_path , method: :delete, class:'item-destroy' %>
 
     <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
 
@@ -97,14 +97,35 @@
         <% end %>
 
   <div class="comment-box">
-    <form>
-      <textarea class="comment-text"></textarea>
-      <p class="comment-warn">
-      <button type="submit" class="comment-btn">
-        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <span>コメントする<span>
-      </button>
-    </form>
+    <% if current_user %>
+      <%= form_with(model: [@item, @comment], local: true) do |form| %>
+        <%= form.text_area :text, class:"comment-flag-icon",placeholder: "コメントする", rows: "2",width:"20",height:"25" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+  </div>
+
+<div class="comments">
+      <h4>＜コメント一覧＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+            <%= comment.text %>
+            <%= link_to '削除', comment_path(comment.id)  , method: :delete, class:'item-destroy' %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+
+
+
+
+
+
+
   </div>
   <div class="links">
   </div>
