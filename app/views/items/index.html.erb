@@ -15,40 +15,46 @@
     <%= link_to (image_tag "card-visa", class: "card-visa-img") %>
   </div>
 
+
   <%# 商品一覧 %>
   <div class='item-contents'>
     <h2 class='title'>最新情報</h2>
     <%# link_to '新規投稿商品', "#", class: "subtitle" %>
     <ul class='item-lists'>
-
-      <%# 商品のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
+<% @items.each do |item| %>
       <li class='list'>
-        <%= link_to "#" do %>
         <div class='item-img-content'>
-          <%= image_tag "item-sample.png", class: "item-img" %>
+          
+          <%= link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
+          <div class='sold-out'>
 
         </div>
         <div class='item-info'>
           <h3 class='item-name'>
-            <%= "商品名" %>
+        (投稿者)
+            <%= item.user.nickname %>
           </h3>
           <div class='item-price'>
-            <span><%= "販売価格" %>円<br>(税込み)</span>
+          <h3 class='item-name'>
+            <span>(場所)<%= item.place.name %></span>
+          </h3>
+          <h3 class='item-name'>
+       <span>(ひとこと)<%= item.comment %></span>
+          </h3>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
             </div>
           </div>
         </div>
-        <% end %>
       </li>
-      <%# //商品のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
-</div>
+        <% end %>
 
  <div class='purchase-btn'>
   <span class='purchase-btn-text'>出品する</span>
- <%= link_to new_items_path do%>
+ <%= link_to new_item_path do%>
     <%= image_tag 'camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+    
 <% end %>
 </div> 
 

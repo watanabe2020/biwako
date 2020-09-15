@@ -63,7 +63,8 @@ Things you may want to cover:
 | ------ | ---------- | ------------------------------ |
 | user   | references | null: false, foreign_key: true |
 | item   | references | null: false, foreign_key: true |
-| text   | references | null: false, foreign_key: true |
+| text   | string     | null: false                    |
+|        |            |                                |
 
 ### Association
 
