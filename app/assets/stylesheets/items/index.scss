@@ -9,7 +9,7 @@ a {
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
-  background-image: image-url('furima-header01.png');
+  // background-image: image-url('furima-header01.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -20,6 +20,46 @@ a {
   padding: 5vh 15vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.feature-contents{
+  position: relative;
+}
+
+.feature-contents p {
+  position: absolute;/*絶対配置*/
+  color:black;/*文字は白に*/
+  top: 80%;
+  left: 18%;
+  }
+.card-visa-img{
+  position: absolute;/*絶対配置*/
+  color:black;/*文字は白に*/
+    top: 71%;
+    left: 23%;
+  }
+
+
+  // .hamaootu-img{
+  //   widows: 0px;
+  //   height: 0px;
+  // }
+
+  fieldset,
+img {
+  width: 90px;
+  border:0;
+}
+
+
+header{
+  background-color: rgb(65, 208, 255);
+}
+
+.title {
+  font-size: 10vh;
+  color:white;
+  font-weight:bold
 }
 
 .service-title {
@@ -224,6 +264,7 @@ a {
 }
 
 .item-contents>.title {
+  color: rgb(65, 208, 255) ;
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
