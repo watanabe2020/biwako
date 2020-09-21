@@ -8,9 +8,15 @@ class Item < ApplicationRecord
   belongs_to_active_hash :water_quality
   belongs_to_active_hash :aquatic_plant
   belongs_to_active_hash :bait
-  
+
   belongs_to :user
   has_many :comments
   has_one_attached :image
-end   
 
+  with_options presence: true do
+    validates :image
+    # validates :comment, length:        { maximum: 40 }
+    validates :place_id, numericality: { other_than: 1, message: 'は空白以外を選択してください' }
+    validates :weather_id, numericality: { other_than: 1, message: 'は空白以外を選択してください' }
+  end
+end

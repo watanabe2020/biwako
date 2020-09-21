@@ -13,57 +13,71 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 5vh 15vw;
+  padding: 3vh 8vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-.feature-contents{
+.feature-contents {
   position: relative;
 }
 
-.feature-contents p {
-  position: absolute;/*絶対配置*/
-  color:black;/*文字は白に*/
-  top: 80%;
-  left: 18%;
-  }
-.card-visa-img{
-  position: absolute;/*絶対配置*/
-  color:black;/*文字は白に*/
-    top: 71%;
-    left: 23%;
-  }
+.hamaootu-img {
+  position: absolute;
+  /*絶対配置*/
+  color: black;
+  /*文字は白に*/
+  top: 28%;
+  left: 58%;
+  width: 15%;
+  height: 13%;
+}
 
+.card-visa-img {
+  position: absolute;
+  /*絶対配置*/
+  color: black;
+  /*文字は白に*/
+  top: 74%;
+  left: 27%;
+  width: 15%;
+  height: 13%;
+}
 
-  // .hamaootu-img{
-  //   widows: 0px;
-  //   height: 0px;
-  // }
+.title-contents {
+  position: absolute;
+  /*絶対配置*/
+  color: black;
+  /*文字は白に*/
+  top: 18%;
+  left: 3%;
+}
 
-  fieldset,
+fieldset,
 img {
-  width: 90px;
-  border:0;
+  // width: 90px;
+
+  border: 0;
 }
 
 
-header{
+header {
   background-color: rgb(65, 208, 255);
 }
 
 .title {
-  font-size: 10vh;
-  color:white;
-  font-weight:bold
+  font-size: 6vh;
+  color: white;
+  font-weight: bold
 }
 
 .service-title {
-  font-size: 8vh;
+  font-size: 4.5vh;
+  position: absolute;
 }
 
 .service-explain {
@@ -127,7 +141,8 @@ header{
 
 .list-pict {
   margin-bottom: 20px;
-  width: 100%;
+  width: 70%;
+  margin: 0 260px;
 }
 
 .reason-list-number {
@@ -261,10 +276,11 @@ header{
   flex-direction: column;
   align-items: center;
   padding: 10vh 0;
+  padding-bottom: 0;
 }
 
 .item-contents>.title {
-  color: rgb(65, 208, 255) ;
+  color: rgb(65, 208, 255);
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
@@ -350,3 +366,312 @@ header{
 }
 
 /* //商品一覧 */
+
+.good-icon {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.purchase-btn-icon {
+  width: 70%;
+  height: 0%;
+}
+
+.main_2{
+  display: flex;
+}
+
+.said_nav{
+  // background-color: #a4e6fa40;
+  width:20vw;
+  height:100vh;
+  margin-left: 20px;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+.said_nav ul{
+  
+margin:0px 0 0px 30px;
+  width:200%;
+  height:100vh;
+  align-items:center;
+  
+
+}
+.said_nav ul li{
+margin:30px 0 0px 30px;
+
+}
+.said_nav ul li a{
+  border:solid 3px #72d7f8;
+  color: #41d0ff;
+  font-weight: bold;
+  font-size:20px;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 22px;
+  border-radius: 100px;
+  font-weight: bold;
+}
+.said_nav ul li a:hover{
+  background: transparent;
+  background-color: #72d7f8;
+  color:white;
+  transition: 0.4s;
+}
+
+
+.s{
+  font-size:30px;
+  margin-left:20px;
+  border:solid 3px #72d7f8;
+  color: #41d0ff;
+  font-weight: bold;
+  font-size:20px;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 22px;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+.s ul li a:hover{
+  background: transparent;
+  background-color: #72d7f8;
+  color:white;
+  transition: 0.4s;
+}
+
+
+.item-contents>.title2 {
+  color: rgb(65, 208, 255);
+  font-size: 5vh;
+  line-height: 1.4;
+  width:auto;
+  font-weight: bold;
+}
+
+
+
+
+
+// 場所
+
+
+.nannko{
+  position: absolute;/*絶対配置*/
+  top: 80%;
+  left: 30%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.nannko a{
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 20px 70px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.nannko a:hover{
+  background: transparent;
+  background-color: #1bbef5;;
+  color:white;
+  transition: 0.4s;
+}
+.hokko{
+  position: absolute;/*絶対配置*/
+  top: 33%;
+  left: 60%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hokko a{
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 20px 70px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.hokko a:hover{
+  background: transparent;
+  background-color: #1bbef5;;
+  color:white;
+  transition: 0.4s;
+}
+
+.hamaotu {
+  position: absolute;
+  /*絶対配置*/
+  top: 74%;
+  left: 27%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hamaotu a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.hamaotu a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  ;
+  color: white;
+  transition: 0.4s;
+}
+
+.katata {
+  position: absolute;
+  /*絶対配置*/
+  top: 26%;
+  left: 46%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.katata a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.katata a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  ;
+  color: white;
+  transition: 0.4s;
+}
+
+.zinnkou {
+  position: absolute;
+  /*絶対配置*/
+  top: 74%;
+  left: 47%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.zinnkou a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.zinnkou a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  ;
+  color: white;
+  transition: 0.4s;
+}
+
+.seta {
+  position: absolute;
+  /*絶対配置*/
+  top: 93%;
+  left: 40%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.seta a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.seta a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  ;
+  color: white;
+  transition: 0.4s;
+}
+
+.kihama {
+  position: absolute;
+  /*絶対配置*/
+  top: 33%;
+  left: 55%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.kihama a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.kihama a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  ;
+  color: white;
+  transition: 0.4s;
+}
+
+.karasaki {
+  position: absolute;
+  /*絶対配置*/
+  top: 42%;
+  left: 36%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.karasaki a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.karasaki a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  ;
+  color: white;
+  transition: 0.4s;
+}

@@ -1,0 +1,2 @@
+module KarasakiHelper
+end

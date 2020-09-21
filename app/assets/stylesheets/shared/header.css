@@ -4,7 +4,7 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 15vw;
+  padding: 2vh 8vw;
   display: flex;
   flex-direction: column;
 }
@@ -13,11 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.furima-icon {
-  width: 10vw;
-  margin-right: 10vw;
 }
 
 .search-form {
@@ -43,15 +38,6 @@
 
 .search-icon {
   width: 100%;
-}
-
-.nav {
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 1vh 0;
 }
 
 .lists-left {
@@ -98,7 +84,56 @@
   color: #333333;
 }
 
-.sign-up {
-  text-decoration: none;
-  color: #333333;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1vh 0;
 }
+
+.nav ul{
+  margin-left: auto;
+}
+
+.nav ul li a{
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 20px 70px;
+  font-size: 22px;
+  border-radius: 100px;
+  font-weight: bold;
+  /* margin-left:10px ; */
+}
+
+.nav ul li a:hover{
+  background: transparent;
+  background-color: #1bbef5;;
+  color:white;
+  transition: 0.4s;
+}
+
+.rogo{
+ display: flex;
+}
+.rogo_biwako{
+ height: 140px;
+ color: white;
+}
+
+.title{
+  margin-top:15px;
+  margin-left: 20px;
+  padding:0;
+  width: 0;
+}
+
+.side{
+
+  width: 550px;
+font-size: 25px;
+}
+
+

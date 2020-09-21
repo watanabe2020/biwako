@@ -4,11 +4,11 @@
 
   </header>
   <div class="items-sell-main">
-    <h2 class="items-sell-title">商品の情報を入力</h2>
-    <%= form_with model:@item, url: items_path,local: true do |f| %>
-    <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
-    <% render 'shared/error_messages', model: f.object %>
-    <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+    <h2 class="items-sell-title">情報を入力</h2>
+   
+
+<%= form_with model:@item, url: items_path,local: true do |f| %>
+  <%= render 'shared/error_messages', model: f.object %>
 
     <%# 出品画像 %>
     <div class="img-upload">
@@ -36,11 +36,11 @@
         </div>
       </div>
     </div>
-    <%# /商品名と商品説明 %>
 
-    <%# 商品の詳細 %>
+    <%# 配送について %>
     <div class="items-detail">
-      <div class="weight-bold-text"></div>
+      <div class="weight-bold-text question-text">
+      </div>
       <div class="form">
         <div class="weight-bold-text">
           場所
@@ -52,21 +52,12 @@
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:weather_id, Weather.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
-      </div>
-    </div>
-    <%# /商品の詳細 %>
-
-    <%# 配送について %>
-    <div class="items-detail">
-      <div class="weight-bold-text question-text">
-      </div>
-      <div class="form">
         <div class="weight-bold-text">
           風
         </div>
         <%= f.collection_select(:wind_id, Wind.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
         <div class="weight-bold-text">
-          水温
+          水温※温度計をお持ちの方入力ください。
         </div>
         <%= f.collection_select(:water_temperature_id, WaterTemperature.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
         <div class="weight-bold-text">
@@ -89,7 +80,6 @@
         </div>
         <%= f.collection_select(:bait_id, Bait.all, :id, :name, {}, {class:"select-box", id:"item-scheduled-delivery"}) %>
       </div>
-
     </div>
     <%# /配送について %>
 
@@ -99,25 +89,15 @@
     <%# 注意書き %>
     <div class="caution">
       <p class="sentence">
-        <a href="#">禁止されている出品、</a>
+        <a href="#">禁止されている投稿、</a>
         <a href="#">行為</a>
         を必ずご確認ください。
-      </p>
-      <p class="sentence">
-        またブランド品でシリアルナンバー等がある場合はご記載ください。
-        <a href="#">偽ブランドの販売</a>
-        は犯罪であり処罰される可能性があります。
-      </p>
-      <p class="sentence">
-        また、出品をもちまして
-        <a href="#">加盟店規約</a>
-        に同意したことになります。
       </p>
     </div>
     <%# /注意書き %>
     <%# 下部ボタン %>
     <div class="sell-btn-contents">
-      <%= f.submit "出品する" ,class:"sell-btn" %>
+      <%= f.submit "投稿" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
@@ -130,7 +110,7 @@
       <li><a href="#">フリマ利用規約</a></li>
       <li><a href="#">特定商取引に関する表記</a></li>
     </ul>
-    <%= link_to image_tag('furima-logo-color.png' , size: '185x50'), "/" %>
+    <%= link_to image_tag('aicon2.png' , size: '185x100'), "/" %>
     <p class="inc">
       ©︎Furima,Inc.
     </p>

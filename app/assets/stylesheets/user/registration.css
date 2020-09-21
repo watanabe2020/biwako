@@ -139,8 +139,9 @@
 
 .register-red-btn {
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background-color:  #41d0ff;
+  border-radius: 100px;
+  border: 1px solid #41d0ff;
   color: #fff;
   line-height: 48px;
   font-size: 14px;

@@ -6,6 +6,6 @@ class Weather < ActiveHash::Base
     { id: 4, name: '曇り' },
     { id: 5, name: '釣りができるぐらいの雨' },
     { id: 6, name: '雨' },
-    { id: 7, name: '雷' },
+    { id: 7, name: '雷' }
   ]
 end

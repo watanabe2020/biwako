@@ -1,61 +1,72 @@
 <%= render "shared/header" %>
-<div class='main'>
-  <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
-  <div class='title-contents'>
-    <h2 class='service-title'>
-      みんなで作る琵琶湖最新情報
-    </h2>
+<%# <div class='main'><%= search_form_for @p, url: items_search_path do |f| %>
+<%# <%= f.label :place_id_eq, '商品名' %>
+<%# <%= f.collection_select :place_id_eq, @items, :place_id, :place_id,  include_blank: '指定なし' %>
+<%# <%= f.submit '検索' %>
+<%# <% end %>
+<%# <a href="/hamaootu">浜大津</a> %>
+<%# FURIMAの特徴 %>
+<div class='feature-contents'>
+  <%= image_tag "biwako6",class:"list-pict" %>
+
+
+  <div class="nannko">
+  <%= link_to '南湖', nannko_index_path , method: :get, class: "item-red-btn" %>
+
   </div>
-  <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
 
-  <%# FURIMAの特徴 %>
-  <div class='feature-contents'>
-    <%= image_tag "main",class:"list-pict" %>
-    <p><%= link_to (image_tag "hamaootu", class: "hamaootu-img") %></p>
-    <%= link_to (image_tag "card-visa", class: "card-visa-img") %>
+  <div class="hokko">
+   <%= link_to '北湖', '#' , method: :get, class: "item-red-btn" %>
   </div>
+</div>
 
 
-  <%# 商品一覧 %>
-  <div class='item-contents'>
-    <h2 class='title'>最新情報</h2>
-    <%# link_to '新規投稿商品', "#", class: "subtitle" %>
-    <ul class='item-lists'>
-<% @items.each do |item| %>
-      <li class='list'>
-        <div class='item-img-content'>
-          
-          <%= link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
-          <div class='sold-out'>
+<%# 商品一覧 %>
+<div class='item-contents'>
+  <h2 class='title2'>最新情報</h2>
+  <%# link_to '新規投稿商品', "#", class: "subtitle" %>
+  <ul class='item-lists'>
+  
+    <% @items.each do |item| %>
+    <li class='list'>
+      <h3 class='item_time'>
+        <%=  l item.created_at%>
+      </h3>
+      <div class='item-img-content'>
+        <%= link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
 
-        </div>
         <div class='item-info'>
           <h3 class='item-name'>
-        (投稿者)
             <%= item.user.nickname %>
           </h3>
+
+          <h3 class='item-name'>
+            <%= item.comment %>
+          </h3>
+
           <div class='item-price'>
-          <h3 class='item-name'>
-            <span>(場所)<%= item.place.name %></span>
-          </h3>
-          <h3 class='item-name'>
-       <span>(ひとこと)<%= item.comment %></span>
-          </h3>
-            <div class='star-btn'>
-              <%= image_tag "star.png", class:"star-icon" %>
-              <span class='star-count'>0</span>
-            </div>
+            <h3 class='item-name'>
+              <span><%= item.place.name %></span>
+            </h3>
+
+            <h3 class='item-name'>
+              <div class='star-btn'>
+                <%= image_tag "good.png", class:"good-icon" %>
+                <span class='star-count'>0</span>
+
+              </div>
           </div>
         </div>
-      </li>
-        <% end %>
+      </div>
+    </li>
+    <% end %>
 
- <div class='purchase-btn'>
-  <span class='purchase-btn-text'>出品する</span>
- <%= link_to new_item_path do%>
-    <%= image_tag 'camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
-    
-<% end %>
-</div> 
+    <div class='purchase-btn'>
+      <span class='purchase-btn-text'>投稿する</span>
+      <%= link_to new_item_path do%>
+      <%= image_tag 'biwako4.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 
-<%= render "shared/footer" %>
+      <% end %>
+    </div>
+
+    <%= render "shared/footer" %>

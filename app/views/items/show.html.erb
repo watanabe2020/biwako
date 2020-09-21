@@ -1,136 +1,111 @@
 <%= render "shared/header" %>
 
-<%# 商品の概要 %>
 <div class="item-show">
   <div class="item-box">
-    <h2 class="name">
-
-    
-    </h2>
     <div class='item-img-content'>
-<%= image_tag @item.image, class:"item-box-img" if @item.image.attached? %>
-    </div>
-    <div class="item-price-box">
-      <span class="item-price">
-      <%= @item.place.name %>
-      </span>
-      <span class="item-postage">
-      </span>
+      <%= image_tag @item.image, class:"item-box-img" if @item.image.attached? %>
     </div>
 
-    <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
-    <div class="item-explain-box">
-
-    </div>
     <table class="detail-table">
       <tbody>
         <tr>
-          <th class="detail-item">出品者</th>
-          <td class="detail-value"><%= "出品者名" %></td>
+          <th class="detail-item">投稿日</th>
+          <td class="detail-value"><%= l @item.created_at %></td>
         </tr>
         <tr>
-          <th class="detail-item">カテゴリー</th>
-          <td class="detail-value"><%= "カテゴリー名" %></td>
+          <th class="detail-item">ひとこと</th>
+          <td class="detail-value"><%= @item.comment %></td>
         </tr>
         <tr>
-          <th class="detail-item">商品の状態</th>
-          <td class="detail-value"><%= "商品の状態" %></td>
+          <th class="detail-item">場所</th>
+          <td class="detail-value"><%= @item.place.name %></td>
         </tr>
         <tr>
-          <th class="detail-item">配送料の負担</th>
-          <td class="detail-value"><%= "発送料の負担" %></td>
+          <th class="detail-item">天気</th>
+          <td class="detail-value"><%= @item.weather.name%></td>
         </tr>
         <tr>
-          <th class="detail-item">発送元の地域</th>
-          <td class="detail-value"><%= "発送元の地域" %></td>
+          <th class="detail-item">風</th>
+          <td class="detail-value"><%= @item.wind.name %></td>
         </tr>
         <tr>
-          <th class="detail-item">発送日の目安</th>
-          <td class="detail-value"><%= "発送日の目安" %></td>
+          <th class="detail-item">水温</th>
+          <td class="detail-value"><%= @item.water_temperature.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">波</th>
+          <td class="detail-value"><%= @item.wave.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">水質</th>
+          <td class="detail-value"><%= @item.water_quality.name%></td>
+        </tr>
+        <tr>
+          <th class="detail-item">水草</th>
+          <td class="detail-value"><%=@item.aquatic_plant.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">ベイト</th>
+          <td class="detail-value"><%= @item.bait.name%></td>
         </tr>
       </tbody>
     </table>
+
     <div class="option">
       <div class="favorite-btn">
-        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <%= image_tag "good.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
         <span>お気に入り 0</span>
       </div>
-      <div class="report-btn">
-        <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
-        <span>不適切な商品の通報</span>
       </div>
+      <div class="report-btn">
     </div>
   </div>
   <%# /商品の概要 %>
-
-     <%# <p class='or-text'>or</p> %>
-<%= link_to '削除', item_path , method: :delete, class:'item-destroy' %>
-
-    <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
-
-
- <ul class='item-lists'>
-<% @items.each do |item| %>
-      <li class='list'>
-        <div class='item-img-content'>
-          
-          <%= link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
-        <div class='item-info'>
-          <h3 class='item-name'>
-        (投稿者)
-            <%= item.user.nickname %>
-          </h3>
-          <div class='item-price'>
-          <h3 class='item-name'>
-            <span>(場所)<%= item.place.name %></span>
-          </h3>
-          <h3 class='item-name'>
-       <span>(ひとこと)<%= item.comment %></span>
-          </h3>
-            <div class='star-btn'>
-              <%= image_tag "star.png", class:"star-icon" %>
-              <span class='star-count'>0</span>
-            </div>
-          </div>
-        </div>
-      </li>
-        <% end %>
-
   <div class="comment-box">
     <% if current_user %>
-      <%= form_with(model: [@item, @comment], local: true) do |form| %>
-        <%= form.text_area :text, class:"comment-flag-icon",placeholder: "コメントする", rows: "2",width:"20",height:"25" %>
-        <%= form.submit "SEND" %>
-      <% end %>
-    <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <%= form_with(model: [@item, @comment], local: true) do |form| %>
+    <%= form.text_area :text, class:"comment-text",placeholder: "コメントする", rows: "2",width:"20",height:"25" %>
+    <%= form.submit "コメント" ,class:"comment-btn"%>
     <% end %>
-  </div>
+    <% else %>
+    <div class="login_comment">
+      <p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
+    </div>
+    <% end %>
 
-<div class="comments">
-      <h4>＜コメント一覧＞</h4>
+    <div class="comments">
       <% if @comments %>
-        <% @comments.each do |comment| %>
-          <p>
-            <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
-            <%= comment.text %>
-            <%= link_to '削除', comment_path(comment.id)  , method: :delete, class:'item-destroy' %>
-          </p>
-        <% end %>
+      <% @comments.each do |comment| %>
+      <div class="comment">
+        <div class="nickname">
+          <%= comment.user.nickname %>
+        </div>
+        <div class="comment-date">
+          <%= l comment.created_at %>
+        </div>
+
+        <div class="destroy">
+          <% if user_signed_in? && current_user.id == @item.user_id %>
+          <%= link_to (image_tag "destroy.png", class: "destroy-img"),comment_path(comment.id),method: :delete %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="comment-content">
+        <%= comment.text %>
+      </div>
+      <% end %>
       <% end %>
     </div>
-
-
-
-
-
-
-
   </div>
-  <div class="links">
-  </div>
-  <%= link_to "トップに戻る", root_path , method: :get, class: "item-red-btn" %>
+</div>
+<div class="bottom_btn">
+  <%= link_to "トップに戻る", root_path , method: :get, class: "item-top-btn" %>
+  <% if user_signed_in? && current_user.id == @item.user_id %>
+  <%# <% link_to '投稿を編集する', edit_item_path , method: :get, class:'item-destroy' %>
+  <%= link_to '投稿を編集する', "#" , method: :get, class:'item-destroy' %>
+  <%= link_to '投稿を削除する', item_path , method: :delete, class:'item-destroy' %>
+  <% end %>
 </div>
 
 <%= render "shared/footer" %>
-

@@ -1,0 +1,56 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <%# <a href="/hamaootu">dddd</a> %>
+
+  <%# 商品一覧 %>
+  <div class='item-contents'>
+    <h2 class='title2'>浜大津</h2>
+    <%# link_to '新規投稿商品', "#", class: "subtitle" %>
+    <ul class='item-lists'>
+      <% @items.each do |item| %>
+      <li class='list'>
+       <h3 class='item_time'>
+      <%=  l item.created_at%>
+    </h3>
+        <div class='item-img-content'>
+          <%= link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
+
+          <div class='item-info'>
+            <h3 class='item-name'>
+              <%= item.user.nickname %>
+            </h3>
+
+            <h3 class='item-name'>
+              <%= item.comment %>
+            </h3>
+
+            <div class='item-price'>
+              <h3 class='item-name'>
+                <span><%= item.place.name %></span>
+              </h3>
+
+              <h3 class='item-name'>
+                <div class='star-btn'>
+                  <%= image_tag "good.png", class:"good-icon" %>
+                  <span class='star-count'>0</span>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <% end %>
+
+      <div class='purchase-btn'>
+        <span class='purchase-btn-text'>投稿する</span>
+        <%= link_to new_item_path do%>
+        <%= image_tag 'biwako4.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+        <% end %>
+      </div>
+
+      <div class="bottom_btn">
+        <%= link_to "戻る", :back , method: :get, class: "item-top-btn-show" %>
+      </div>
+
+      <%= render "shared/footer" %>

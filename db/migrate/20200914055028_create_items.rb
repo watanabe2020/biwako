@@ -7,9 +7,9 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.string       :comment                   
       t.string       :place_id,                  null: false
       t.integer      :weather_id,                null: false
-      t.integer      :wind_id,                   null: false
-      t.integer      :wave_id,                   null: false
-      t.integer      :water_quality_id,          null: false
+      t.integer      :wind_id,                   
+      t.integer      :wave_id,                   
+      t.integer      :water_quality_id,          
       t.integer      :water_temperature_id      
       t.integer      :aquatic_plant_id         
       t.integer      :bait_id                   

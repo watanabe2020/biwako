@@ -26,7 +26,7 @@ class ItemsController < ApplicationController
   def show
     @items = Item.all.order('created_at DESC')
     @comment = Comment.new
-    @comments = @item.comments.includes(:user)
+    @comments = @item.comments.includes(:item)
   end
 
   def update
@@ -45,15 +45,27 @@ class ItemsController < ApplicationController
     end
   end
 
-
-  def search
-    @items = Item.search(params[:keyword])
+  def my
+    # @item = Item.find(params[:user_id])
+    @items = Item.where(user_id: current_user.id)
   end
 
-    private
-    
+  # def search
+  #   @items = Item.search(params[:keyword])
+  # end
+
+  # def search
+  #   @results = @p.result.includes(:items) # 検索条件にマッチした商品の情報を取得
+  # end
+
+  private
+
+  # def search_item
+  #   @p = Item.ransack(params[:q]) # 検索オブジェクトを生成
+  # end
+
   def user_params
-    params.require(:item).permit(:image,:comment,:place_id,:weather_id,:wind_id,:water_temperature_id,:wave_id,:water_quality_id,:aquatic_plant_id,:bait_id).merge(user_id: current_user.id)
+    params.require(:item).permit(:image, :comment, :place_id, :weather_id, :wind_id, :water_temperature_id, :wave_id, :water_quality_id, :aquatic_plant_id, :bait_id).merge(user_id: current_user.id)
   end
 
   def set_item
@@ -63,9 +75,4 @@ class ItemsController < ApplicationController
   def move_to_index
     redirect_to new_user_session_path unless user_signed_in?
   end
-
-  
 end
-
-
-# imgの許可

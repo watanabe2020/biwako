@@ -1,0 +1,2 @@
+module KatataHelper
+end

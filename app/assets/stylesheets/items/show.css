@@ -1,7 +1,5 @@
-/* 商品の概要 */
 
 .item-show {
-  background-color: #f8f8f8;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -13,7 +11,7 @@
   background-color: #FFF;
   width: 70vw;
   min-width: 1200px;
-  padding: 10vh 15vw;
+  padding: 3vh 15vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,8 +26,7 @@
 .item-box-img {
   height: 50vh;
   width: 60vw;
-  min-height: 500px;
-  background-color: rgb(205, 202, 202);
+  min-height:  605px;
   object-fit: contain;
 }
 
@@ -40,19 +37,11 @@
   flex-direction: column;
 }
 
-.item-price-box>.item-price {
-  font-size: 4vh;
-  font-weight: bold;
-}
 
-.item-price-box>.item-postage {
-  font-size: 16px;
-}
-
-
-.item-red-btn {
+.item-top-btn {
   text-align: center;
-  background-color: #ea352d;
+  background-color:  #41d0ff;
+  border-radius: 100px;
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
@@ -60,89 +49,90 @@
   padding: 2vh 10vw;
 }
 
+.item-top-btn-show {
+  text-align: center;
+  background-color:  #41d0ff;
+  border-radius: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 20px 0px;
+  padding: 1vh 4vw;
+}
+.item-top-btn-nannko {
+  text-align: center;
+  background-color:  #41d0ff;
+  border-radius: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 20px 0px;
+  padding: 1vh 4vw;
+}
+
+.bottom_btn_nannko{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+margin-top: 90px;
+}
+
 .or-text {
   font-size: 20px;
 }
 
 .item-destroy {
+
   background-color: lightgray;
   text-align: center;
   font-size: 24px;
   color: black;
-  margin: 20px 0px;
+  margin-top: 60px;
   padding: 2vh 10vw;
-}
-
-.item-explain-box {
-  font-size: 18px;
-  margin: 40px 0px;
+  border-radius: 100px;
 }
 
 .detail-table {
+  margin-top:30px ;
   margin-bottom: 30px;
   width: 100%;
 }
 
 .detail-item {
   width: 20%;
-  background-color: #eee;
-  border: 1px solid #dedede;
+  color: #fff;
+  background-color: #41d0ff;
+  border: 1px solid #217aff;
   font-size: 14px;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .detail-value {
   width: 80%;
   padding: 20px;
-  border: 1px solid #dedede;
+  border: 1px solid #217aff;
   font-size: 14px;
-}
-
-.option {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
 }
 
 .favorite-btn {
   border-radius: 40px;
   width: 15vw;
   min-width: 200px;
-  color: rgb(249, 75, 0);
-  border: 2px solid #ffb340;
+  color:#217aff;
+  border: 1px solid #217aff;
   display: flex;
   justify-content: center;
+  border-radius: 10px;
   align-items: center;
   margin-right: 20px;
 }
 
-.favorite-star-icon {
-  margin-right: 5px;
-}
-
-.report-btn {
-  border-radius: 40px;
-  width: 15vw;
-  min-width: 200px;
-
-  padding: 1vh 0;
-  color: black;
-  border: 2px solid #2d2d2d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.report-flag-icon {
-  margin-right: 5px;
-}
-
-
-/* /商品の概要 */
-
 .comment-box {
   width: 40vw;
-  background-color: #fff;
+  background-color: rgb(214 249 255);
   margin: 5vh 0;
   text-align: center;
 }
@@ -151,7 +141,7 @@
   width: 100%;
   height: 100px;
   padding: 10px;
-  border: solid 2px #dedede;
+  border: 2px solid #217aff;
   resize: none;
 }
 
@@ -163,44 +153,88 @@
 }
 
 .comment-btn {
+  align-items: center;
   line-height: 48px;
-  background-color: #3CCACE;
-  border: 1px solid #3CCACE;
+  background-color: #41d0ff;
+  border: 2px solid #fff;
   color: #fff;
   width: 50%;
+  margin-top: 30px;
   min-width: 150px;
   font-size: 18px;
   border-radius: 100px;
   margin-bottom: 2vh;
 }
 
-.comment-flag {
+.login_comment{
+  background-color: #f7f4f4;
+  color: rgb(248, 120, 35);
+}
+
+.comment {
+  width: 40vw;
+  margin: 0, auto;
+  padding: 15px;
+  padding-bottom: 5px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  background-color: rgb(214 249 255)
+
+}
+.comment-content {
+  margin-left: 20px;
+  color: #217aff;
+  text-align:left ;
+  font-size:20px;
+  /* margin-bottom:10px */
 }
 
-.comment-flag-icon {
-  margin: 10px 5px 0 0;
+.nickname{
+  font-size:20px;
+  font-weight:bold;
+  /* color: #217aff; */
 }
 
-.links {
+.comment-date {
+  /* position: absolute; */
+  margin-left: 15px;
+  font-size: 8px;
+}
+
+.destroy {
+  color: white;
+  /* width: px; */
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 3px;
+  /* position: absolute; */
+}
+
+.destroy a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 8px;
+}
+
+
+.bottom_btn{
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
-  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+}
+
+.destroy-img{
+  width:20px;
+  margin-top: 6px;
 
 }
 
-.change-item-btn {
-  font-size: 30px;
-  text-decoration: none;
-  color: #3CCACE;
-}
-
-.another-item {
-  display: block;
-  margin: 30px 0px 8px;
-  color: #3CCACE;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 23px;
+.favorite-star-icon{
+  width:130px;
+  height: auto;
+  margin-right: 20px;
+  margin:10px;
 }
