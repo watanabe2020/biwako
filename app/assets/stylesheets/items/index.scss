@@ -64,15 +64,14 @@ img {
   border: 0;
 }
 
-
 header {
-  background-color: rgb(65, 208, 255);
+  background-color: #3ccace;
 }
 
 .title {
   font-size: 6vh;
   color: white;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .service-title {
@@ -115,7 +114,7 @@ header {
 }
 
 .select-reason-contents>.title::after {
-  content: '';
+  content: "";
   width: 70px;
   height: 4px;
   background-color: #3ccace;
@@ -175,11 +174,10 @@ header {
 
 /* //FURIMAが選ばれる3つの理由部分 */
 
-
 /* 画面中央の「会員数日本一位」帯部分*/
 .ad-contents {
   width: 100vw;
-  background-image: image-url('furima-header02.png');
+  background-image: image-url("furima-header02.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -232,7 +230,7 @@ header {
 }
 
 .feature-contents>.title::after {
-  content: '';
+  content: "";
   width: 70px;
   height: 4px;
   background-color: #3ccace;
@@ -271,7 +269,7 @@ header {
 /* 商品一覧 */
 
 .item-contents {
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,7 +278,7 @@ header {
 }
 
 .item-contents>.title {
-  color: rgb(65, 208, 255);
+  color: #3ccace;
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
@@ -304,9 +302,8 @@ header {
 .item-lists>.list {
   width: 37vh;
   padding: 1vw;
-  background-color: #FFF;
+  background-color: #fff;
 }
-
 
 .item-img-content {
   position: relative;
@@ -327,14 +324,13 @@ header {
 }
 
 .sold-out>span {
-  color: #FFF;
+  color: #fff;
   font-size: 45px;
   font: bold;
 }
 
-
 .item-info {
-  background-color: #FFF;
+  background-color: #fff;
   color: black;
   padding: 1vw;
 }
@@ -348,7 +344,6 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
 
 .star-btn {
   display: flex;
@@ -377,57 +372,35 @@ header {
   height: 0%;
 }
 
-.main_2{
+.main_2 {
   display: flex;
 }
 
-.said_nav{
+.said_nav {
   // background-color: #a4e6fa40;
-  width:20vw;
-  height:100vh;
+  width: 20vw;
+  height: 100vh;
   margin-left: 20px;
   margin-top: 40px;
   border-radius: 30px;
 }
-.said_nav ul{
-  
-margin:0px 0 0px 30px;
-  width:200%;
-  height:100vh;
-  align-items:center;
-  
 
+.said_nav ul {
+  margin: 0px 0 0px 30px;
+  width: 200%;
+  height: 100vh;
+  align-items: center;
 }
-.said_nav ul li{
-margin:30px 0 0px 30px;
 
+.said_nav ul li {
+  margin: 30px 0 0px 30px;
 }
-.said_nav ul li a{
-  border:solid 3px #72d7f8;
+
+.said_nav ul li a {
+  border: solid 3px #72d7f8;
   color: #41d0ff;
   font-weight: bold;
-  font-size:20px;
-  text-decoration: none;
-  padding: 5px 15px;
-  font-size: 22px;
-  border-radius: 100px;
-  font-weight: bold;
-}
-.said_nav ul li a:hover{
-  background: transparent;
-  background-color: #72d7f8;
-  color:white;
-  transition: 0.4s;
-}
-
-
-.s{
-  font-size:30px;
-  margin-left:20px;
-  border:solid 3px #72d7f8;
-  color: #41d0ff;
-  font-weight: bold;
-  font-size:20px;
+  font-size: 20px;
   text-decoration: none;
   padding: 5px 15px;
   font-size: 22px;
@@ -435,55 +408,74 @@ margin:30px 0 0px 30px;
   font-weight: bold;
 }
 
-.s ul li a:hover{
+.said_nav ul li a:hover {
   background: transparent;
   background-color: #72d7f8;
-  color:white;
+  color: white;
   transition: 0.4s;
 }
 
+.s {
+  font-size: 30px;
+  margin-left: 20px;
+  border: solid 3px #72d7f8;
+  color: #41d0ff;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 22px;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+.s ul li a:hover {
+  background: transparent;
+  background-color: #72d7f8;
+  color: white;
+  transition: 0.4s;
+}
 
 .item-contents>.title2 {
-  color: rgb(65, 208, 255);
+  color: #3ccace;
   font-size: 5vh;
   line-height: 1.4;
-  width:auto;
+  width: auto;
   font-weight: bold;
 }
-
-
-
-
 
 // 場所
 
-
-.nannko{
-  position: absolute;/*絶対配置*/
+.nannko {
+  position: absolute;
+  /*絶対配置*/
   top: 80%;
   left: 30%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
 }
-.nannko a{
+
+.nannko a {
   color: white;
   background-color: #81e0ff;
   text-decoration: none;
   padding: 20px 70px;
   font-size: 22px;
   border-radius: 100px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 0 5px a(0, 0, 0, 0.9);
 }
 
-.nannko a:hover{
+.nannko a:hover {
   background: transparent;
-  background-color: #1bbef5;;
-  color:white;
+  background-color: #1bbef5;
+  color: white;
   transition: 0.4s;
 }
-.hokko{
-  position: absolute;/*絶対配置*/
+
+.hokko {
+  position: absolute;
+  /*絶対配置*/
   top: 33%;
   left: 60%;
   text-align: center;
@@ -491,7 +483,7 @@ margin:30px 0 0px 30px;
   font-weight: bold;
 }
 
-.hokko a{
+.hokko a {
   color: white;
   background-color: #81e0ff;
   text-decoration: none;
@@ -501,10 +493,10 @@ margin:30px 0 0px 30px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-.hokko a:hover{
+.hokko a:hover {
   background: transparent;
-  background-color: #1bbef5;;
-  color:white;
+  background-color: #1bbef5;
+  color: white;
   transition: 0.4s;
 }
 
@@ -531,7 +523,6 @@ margin:30px 0 0px 30px;
 .hamaotu a:hover {
   background: transparent;
   background-color: #1bbef5;
-  ;
   color: white;
   transition: 0.4s;
 }
@@ -559,7 +550,6 @@ margin:30px 0 0px 30px;
 .katata a:hover {
   background: transparent;
   background-color: #1bbef5;
-  ;
   color: white;
   transition: 0.4s;
 }
@@ -587,7 +577,6 @@ margin:30px 0 0px 30px;
 .zinnkou a:hover {
   background: transparent;
   background-color: #1bbef5;
-  ;
   color: white;
   transition: 0.4s;
 }
@@ -615,7 +604,6 @@ margin:30px 0 0px 30px;
 .seta a:hover {
   background: transparent;
   background-color: #1bbef5;
-  ;
   color: white;
   transition: 0.4s;
 }
@@ -643,7 +631,6 @@ margin:30px 0 0px 30px;
 .kihama a:hover {
   background: transparent;
   background-color: #1bbef5;
-  ;
   color: white;
   transition: 0.4s;
 }
@@ -671,7 +658,6 @@ margin:30px 0 0px 30px;
 .karasaki a:hover {
   background: transparent;
   background-color: #1bbef5;
-  ;
   color: white;
   transition: 0.4s;
 }
