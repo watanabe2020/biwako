@@ -132,7 +132,7 @@ margin-top: 90px;
 
 .comment-box {
   width: 40vw;
-  background-color: #3ccace;
+  background-color:#81e0ff;
   margin: 5vh 0;
   text-align: center;
 }
@@ -178,7 +178,7 @@ margin-top: 90px;
   padding-bottom: 5px;
   display: flex;
   align-items: center;
-  background-color:#3ccace;
+  background: #81e0ff;;
 
 }
 .comment-content {
