@@ -2,3 +2,9 @@ ja:
   time:
     formats:
       default: "%Y/%m/%d %H:%M"
+  activerecord:
+    attributes:
+      item:
+        image: 画像
+        place_id: 場所
+        weather_id: 天気
