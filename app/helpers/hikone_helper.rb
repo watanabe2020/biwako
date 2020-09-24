@@ -1,0 +1,2 @@
+module HikoneHelper
+end

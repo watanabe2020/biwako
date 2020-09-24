@@ -105,7 +105,7 @@ header {
   padding: 5vh 15vw;
 }
 
-.select-reason-contents > .title {
+.select-reason-contents>.title {
   text-align: center;
   font-size: 3.5vh;
   font-weight: bold;
@@ -113,7 +113,7 @@ header {
   position: relative;
 }
 
-.select-reason-contents > .title::after {
+.select-reason-contents>.title::after {
   content: "";
   width: 70px;
   height: 4px;
@@ -130,7 +130,7 @@ header {
   flex-wrap: wrap;
 }
 
-.reason-lists > .list {
+.reason-lists>.list {
   width: 33vh;
   display: flex;
   flex-direction: column;
@@ -221,7 +221,7 @@ header {
   padding: 5vh 15vw;
 }
 
-.feature-contents > .title {
+.feature-contents>.title {
   text-align: center;
   font-size: 3.5vh;
   font-weight: bold;
@@ -229,7 +229,7 @@ header {
   position: relative;
 }
 
-.feature-contents > .title::after {
+.feature-contents>.title::after {
   content: "";
   width: 70px;
   height: 4px;
@@ -246,7 +246,7 @@ header {
   flex-wrap: wrap;
 }
 
-.feature-lists > .list {
+.feature-lists>.list {
   width: 33vh;
   display: flex;
   flex-direction: column;
@@ -277,14 +277,14 @@ header {
   padding-bottom: 0;
 }
 
-.item-contents > .title {
+.item-contents>.title {
   color: #41d0ff;
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
 }
 
-.item-contents > .subtitle {
+.item-contents>.subtitle {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
@@ -299,7 +299,7 @@ header {
   justify-content: center;
 }
 
-.item-lists > .list {
+.item-lists>.list {
   width: 37vh;
   padding: 1vw;
   background-color: #fff;
@@ -323,7 +323,7 @@ header {
   transform: skewY(-10deg);
 }
 
-.sold-out > span {
+.sold-out>span {
   color: #fff;
   font-size: 45px;
   font: bold;
@@ -436,7 +436,7 @@ header {
   transition: 0.4s;
 }
 
-.item-contents > .title2 {
+.item-contents>.title2 {
   color: #41d0ff;
   font-size: 5vh;
   line-height: 1.4;
@@ -554,7 +554,7 @@ header {
   transition: 0.4s;
 }
 
-.zinnkou {
+.yabasi {
   position: absolute;
   /*絶対配置*/
   top: 74%;
@@ -564,7 +564,7 @@ header {
   font-weight: bold;
 }
 
-.zinnkou a {
+.yabasi a {
   color: white;
   background-color: #81e0ff;
   text-decoration: none;
@@ -574,7 +574,7 @@ header {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-.zinnkou a:hover {
+.yabasi a:hover {
   background: transparent;
   background-color: #1bbef5;
   color: white;
@@ -656,6 +656,171 @@ header {
 }
 
 .karasaki a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  color: white;
+  transition: 0.4s;
+}
+
+// 北湖
+
+
+.okinosima {
+  position: absolute;
+  /*絶対配置*/
+  top: 66%;
+  left: 48%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.okinosima a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.okinosima a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  color: white;
+  transition: 0.4s;
+}
+
+.takasima {
+  position: absolute;
+  /*絶対配置*/
+  top: 45%;
+  left: 48%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.takasima a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.takasima a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  color: white;
+  transition: 0.4s;
+}
+
+.hikone {
+  position: absolute;
+  /*絶対配置*/
+  top: 56%;
+  left: 67%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hikone a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.hikone a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  color: white;
+  transition: 0.4s;
+}
+
+.oomimaiko {
+  position: absolute;
+  /*絶対配置*/
+  top: 66%;
+  left: 31%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.oomimaiko a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.oomimaiko a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  color: white;
+  transition: 0.4s;
+}
+
+.nagahama {
+  position: absolute;
+  /*絶対配置*/
+  top: 28%;
+  left: 68%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.nagahama a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.nagahama a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  color: white;
+  transition: 0.4s;
+}
+
+.okubiwako {
+  position: absolute;
+  /*絶対配置*/
+  top: 12%;
+  left: 54%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.okubiwako a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 22px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.okubiwako a:hover {
   background: transparent;
   background-color: #1bbef5;
   color: white;

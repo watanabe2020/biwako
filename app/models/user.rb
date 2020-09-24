@@ -8,7 +8,8 @@ class User < ApplicationRecord
   has_many :comments
 
   with_options presence: true do
-    validates :nickname, format: { with: /\A[a-z0-9]+\z/i, message: 'は半角文字で入力してください' }
+    validates :nickname
+    validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?[\d])\w{6,12}\z/i, message: 'は数字と小文字を必ず1文字使ってください' }
     validates :email, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i, massage: 'もう一度入力してください' }
   end
 end

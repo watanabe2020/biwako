@@ -1,10 +1,8 @@
 <%= render "shared/header" %>
 <div class='main'>
-  <%# <a href="/hamaootu">浜大津</a> %>
 
 <%= render "shared/side" %>
 
-  <%# FURIMAの特徴 %>
   <div class='feature-contents'>
     <%= image_tag "nannko.png",class:"list-pict" %>
     
@@ -18,19 +16,19 @@
     </div>
 
     <div class=" kihama">
-      <%= link_to '木浜', '#' , method: :get, class: "item-red-btn" %>
+      <%= link_to '木浜', kihama_index_path , method: :get, class: "item-red-btn" %>
     </div>
 
     <div class="seta">
-      <%= link_to '瀬田川', '#' , method: :get, class: "item-red-btn" %>
+      <%= link_to '瀬田川', seta_index_path , method: :get, class: "item-red-btn" %>
     </div>
 
     <div class="karasaki">
       <%= link_to '唐崎',  karasaki_index_path , method: :get, class: "item-red-btn" %>
     </div>
 
-    <div class="zinnkou">
-      <%= link_to '矢橋帰帆島', '#' , method: :get, class: "item-red-btn" %>
+    <div class="yabasi">
+      <%= link_to '矢橋帰帆島', yabasi_index_path , method: :get, class: "item-red-btn" %>
     </div>
   </div>
 

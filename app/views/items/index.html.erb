@@ -1,11 +1,5 @@
 <%= render "shared/header" %>
-<%# <div class='main'><%= search_form_for @p, url: items_search_path do |f| %>
-<%# <%= f.label :place_id_eq, '商品名' %>
-<%# <%= f.collection_select :place_id_eq, @items, :place_id, :place_id,  include_blank: '指定なし' %>
-<%# <%= f.submit '検索' %>
-<%# <% end %>
-<%# <a href="/hamaootu">浜大津</a> %>
-<%# FURIMAの特徴 %>
+
 <div class='feature-contents'>
   <%= image_tag "biwako6.png",class:"list-pict" %>
 
@@ -16,15 +10,12 @@
   </div>
 
   <div class="hokko">
-   <%= link_to '北湖', '#' , method: :get, class: "item-red-btn" %>
+   <%= link_to '北湖', hokko_index_path , method: :get, class: "item-red-btn" %>
   </div>
 </div>
 
-
-<%# 商品一覧 %>
 <div class='item-contents'>
   <h2 class='title2'>最新情報</h2>
-  <%# link_to '新規投稿商品', "#", class: "subtitle" %>
   <ul class='item-lists'>
   
     <% @items.each do |item| %>

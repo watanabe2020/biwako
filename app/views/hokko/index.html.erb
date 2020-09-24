@@ -1,0 +1,47 @@
+<%= render "shared/header" %>
+<div class='main'>
+  <%# <a href="/hamaootu">浜大津</a> %>
+
+<%= render "shared/hokko_side" %>
+
+  <%# FURIMAの特徴 %>
+  <div class='feature-contents'>
+    <%= image_tag "hokko.png",class:"list-pict" %>
+    
+
+    <div class="takasima">
+      <%= link_to '高島', takasima_index_path , method: :get, class: "item-red-btn" %>
+    </div>
+
+    <div class=" okubiwako">
+      <%= link_to '奥琵琶湖', okubiwako_index_path , method: :get, class: "item-red-btn" %>
+    </div>
+
+    <div class= "hikone ">
+      <%= link_to '彦根', hikone_index_path , method: :get, class: "item-red-btn" %>
+    </div>
+
+    <div class="nagahama">
+      <%= link_to '長浜', nagahama_index_path , method: :get, class: "item-red-btn" %>
+    </div>
+
+    <div class="oomimaiko">
+      <%= link_to '近江舞子', oomimaiko_index_path , method: :get, class: "item-red-btn" %>
+    </div>
+
+    <div class="okinosima">
+      <%= link_to '沖島', okinosima_index_path , method: :get, class: "item-red-btn" %>
+    </div>
+  </div>
+
+  <div class='purchase-btn'>
+    <span class='purchase-btn-text'>投稿する</span>
+    <%= link_to new_item_path do%>
+    <%= image_tag 'biwako4.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+    <% end %>
+  </div>
+</div>
+<div class="bottom_btn_nannko">
+<%= link_to "戻る", :back , method: :get, class: "item-top-btn-nannko" %>
+</div>
+  <%= render "shared/footer" %>

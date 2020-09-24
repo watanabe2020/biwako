@@ -1,0 +1,2 @@
+module OkinosimaHelper
+end
