@@ -12,6 +12,6 @@ class Place < ActiveHash::Base
     { id: 10, name: '沖の島' },
     { id: 11, name: '彦根' },
     { id: 12, name: '長浜' },
-    { id: 13, name: '奥琵琶湖' },
+    { id: 13, name: '奥琵琶湖' }
   ]
 end
