@@ -28,13 +28,12 @@
               <% if current_user.already_favorited?(item) %>
               <%= link_to item_favorites_path(item), method: :delete do %>
               <div class='star-btn'>
-                <%= image_tag "favorite1", class:"good-icon" %>
+                <%= image_tag "favorite1.png", class:"good-icon" %>
                 <% end %>
                 <% else %>
                 <%= link_to  item_favorites_path(item), method: :post do%>
                 <div class='star-btn'>
-                  <%= image_tag "favorite1
-                ", class:"good-icon" %>
+                  <%= image_tag "favorite.png", class:"good-icon" %>
                   <% end %>
                   <% end %>
                   <% end %>
