@@ -1,18 +1,13 @@
 <%= render "shared/header" %>
 <div class='main'>
-
-  <%# <a href="/hamaootu">dddd</a> %>
-
-  <%# 商品一覧 %>
   <div class='item-contents'>
-    <h2 class='title2'>唐崎</h2>
-    <%# link_to '新規投稿商品', "#", class: "subtitle" %>
+    <h2 class='title2'>今熱いいねランキングトップ10</h2>
     <ul class='item-lists'>
       <% @items.each do |item| %>
       <li class='list'>
-    <h3 class='item_time'>
-      <%=  l item.created_at%>
-    </h3>
+        <h3 class='item_time'>
+          <%=  l item.created_at%>
+        </h3>
         <div class='item-img-content'>
           <%= link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
 
@@ -30,7 +25,7 @@
                 <span><%= item.place.name %></span>
               </h3>
 
-            <% if user_signed_in? && current_user%>
+              <% if user_signed_in? && current_user%>
               <% if current_user.already_favorited?(item) %>
               <%= link_to item_favorites_path(item), method: :delete do %>
               <div class='star-btn'>
@@ -44,6 +39,7 @@
                   <% end %>
                   <% end %>
                   <span class='star-count'><%= item.favorites.count %></span>
+              
                 </div>
             </div>
           </div>
@@ -57,10 +53,9 @@
         <%= image_tag 'biwako4.png' , size: '185x50' ,class: "purchase-btn-icon" %>
         <% end %>
       </div>
-      
-<div class="bottom_btn">
-<%= link_to "戻る", :back , method: :get, class: "item-top-btn-show" %>
-</div>
 
-</div>
+      <div class="bottom_btn">
+        <%= link_to "戻る", :back , method: :get, class: "item-top-btn-show" %>
+      </div>
+
       <%= render "shared/footer" %>

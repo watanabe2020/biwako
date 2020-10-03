@@ -53,59 +53,79 @@
 
     <div class="option">
       <div class="favorite-btn">
-        <%= image_tag "good.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <span>お気に入り 0</span>
-      </div>
-      </div>
-      <div class="report-btn">
-    </div>
-  </div>
-  <%# /商品の概要 %>
-  <div class="comment-box">
-    <% if current_user %>
-    <%= form_with(model: [@item, @comment], local: true) do |form| %>
-    <%= form.text_area :text, class:"comment-text",placeholder: "コメントする", rows: "2",width:"20",height:"25" %>
-    <%= form.submit "コメント" ,class:"comment-btn"%>
-    <% end %>
-    <% else %>
-    <div class="login_comment">
-      <p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
-    </div>
-    <% end %>
 
-    <div class="comments">
-      <% if @comments %>
-      <% @comments.each do |comment| %>
-      <div class="comment">
-        <div class="nickname">
-          <%= comment.user.nickname %>
-        </div>
-        <div class="comment-date">
-          <%= l comment.created_at %>
-        </div>
+        <% if user_signed_in? && current_user%>
+        <% if current_user.already_favorited?(@item) %>
+        <%= link_to item_favorites_path(@item), method: :delete do %>
+        <div class='star-btn'>
+          <%= image_tag "favorite1" ,class:"favorite-star-icon" ,width:"10",height:"10"%>
+          <% end %>
+          <% else %>
+          <%= link_to  item_favorites_path(@item), method: :post do%>
+          <div class='star-btn'>
+            <%= image_tag "favorite" ,class:"favorite-star-icon" ,width:"10",height:"10"%>
+            <% end %>
+            <% end %>
+            <% end %>
 
-        <div class="destroy">
-          <% if user_signed_in? && current_user.id == @item.user_id %>
-          <%= link_to (image_tag "destroy.png", class: "destroy-img"),comment_path(comment.id),method: :delete %>
+            <span class='star-count'><%= @item.favorites.count %></span>
+          </div>
+        </div>
+        <div class="report-btn">
+        </div>
+      </div>
+      <%# /商品の概要 %>
+      <div class="comment-box">
+        <% if current_user %>
+        <%= form_with(model: [@item, @comment], local: true) do |form| %>
+        <%= form.text_area :text, class:"comment-text",placeholder: "コメントする", rows: "2",width:"20",height:"25" %>
+        <%= form.submit "コメント" ,class:"comment-btn"%>
+        <% end %>
+        <% else %>
+        <div class="login_comment">
+          <p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
+        </div>
+        <% end %>
+
+        <div class="comments">
+          <% if @comments %>
+          <% @comments.each do |comment| %>
+          <div class="comment">
+            <div class="nickname">
+              <%= comment.user.nickname %>
+            </div>
+            <div class="comment-date">
+              <%= l comment.created_at %>
+            </div>
+
+            <div class="destroy">
+              <% if user_signed_in? && current_user.id == @item.user_id %>
+              <%= link_to (image_tag "destroy.png", class: "destroy-img"),comment_path(comment.id),method: :delete %>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="comment-content">
+            <%= comment.text %>
+          </div>
+          <% end %>
           <% end %>
         </div>
       </div>
-
-      <div class="comment-content">
-        <%= comment.text %>
-      </div>
-      <% end %>
+    </div>
+    <div class="bottom_btn">
+      <%= link_to "トップに戻る", root_path , method: :get, class: "item-top-btn" %>
+      <% if user_signed_in? && current_user.id == @item.user_id %>
+      <%= link_to '投稿を編集する', "#" , method: :get, class:'item-destroy' %>
+      <div id="open">投稿を削除する</div>
+      <div id="mask" class="hidden"></div>
+      <section id="modal" class="hidden">
+        <p>本当に削除しますか？</p>
+        <div id="close">
+          <%= link_to '投稿を削除する', item_path , method: :delete  %>
+        </div>
+      </section>
       <% end %>
     </div>
-  </div>
-</div>
-<div class="bottom_btn">
-  <%= link_to "トップに戻る", root_path , method: :get, class: "item-top-btn" %>
-  <% if user_signed_in? && current_user.id == @item.user_id %>
-  <%# <% link_to '投稿を編集する', edit_item_path , method: :get, class:'item-destroy' %>
-  <%= link_to '投稿を編集する', "#" , method: :get, class:'item-destroy' %>
-  <%= link_to '投稿を削除する', item_path , method: :delete, class:'item-destroy' %>
-  <% end %>
-</div>
 
-<%= render "shared/footer" %>
+    <%= render "shared/footer" %>

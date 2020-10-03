@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'all/index'
+  get 'rank/index'
   get 'kihama/index'
   get 'seta/index'
   get 'yabasi/index'
@@ -18,6 +20,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
   resources :items do 
+    resource :favorites, only: [:create, :destroy]
     resources :comments
     member do
       get 'my'

@@ -12,10 +12,11 @@ class Item < ApplicationRecord
   belongs_to :user
   has_many :comments
   has_one_attached :image
+  has_many :favorites, dependent: :destroy
+  has_many :favorites_items, through: :favorites, source: :user
 
   with_options presence: true do
     validates :image
-    # validates :comment, length:        { maximum: 40 }
     validates :place_id, numericality: { other_than: 1, message: 'は空白以外を選択してください' }
     validates :weather_id, numericality: { other_than: 1, message: 'は空白以外を選択してください' }
   end

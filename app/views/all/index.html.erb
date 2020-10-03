@@ -1,18 +1,17 @@
 <%= render "shared/header" %>
 
-<%# 商品一覧 %>
+
 <div class='item-contents'>
-  <h2 class='title2'>マイページ</h2>
-  <%# link_to '新規投稿商品', "#", class: "subtitle" %>
+  <h2 class='title2'>すべての投稿</h2>
   <ul class='item-lists'>
-  
+
     <% @items.each do |item| %>
     <li class='list'>
       <h3 class='item_time'>
         <%=  l item.created_at%>
       </h3>
       <div class='item-img-content'>
-        <%= link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
+        <%=link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
 
         <div class='item-info'>
           <h3 class='item-name'>
@@ -29,25 +28,24 @@
             </h3>
 
             <h3 class='item-name'>
-            <% if user_signed_in? && current_user%>
+              <% if user_signed_in? && current_user%>
               <% if current_user.already_favorited?(item) %>
               <%= link_to item_favorites_path(item), method: :delete do %>
               <div class='star-btn'>
-                <%= image_tag "favorite1", class:"good-icon" %>
+                <%= image_tag "favorite1.png", class:"good-icon" %>
                 <% end %>
                 <% else %>
                 <%= link_to  item_favorites_path(item), method: :post do%>
                 <div class='star-btn'>
-                  <%= image_tag "favorite1", class:"good-icon" %>
+                  <%= image_tag "favorite.png", class:"good-icon" %>
                   <% end %>
                   <% end %>
                   <% end %>
                   <span class='star-count'><%= item.favorites.count %></span>
-
+                </div>
               </div>
           </div>
         </div>
-      </div>
     </li>
     <% end %>
 
@@ -55,7 +53,11 @@
       <span class='purchase-btn-text'>投稿する</span>
       <%= link_to new_item_path do%>
       <%= image_tag 'biwako4.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+
       <% end %>
     </div>
+
+
+
 
     <%= render "shared/footer" %>
