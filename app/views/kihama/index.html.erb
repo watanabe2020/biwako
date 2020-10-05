@@ -24,6 +24,7 @@
               <h3 class='item-name'>
                 <span><%= item.place.name %></span>
               </h3>
+              
             <% if user_signed_in? && current_user%>
               <% if current_user.already_favorited?(item) %>
               <%= link_to item_favorites_path(item), method: :delete do %>
@@ -37,10 +38,15 @@
                   <% end %>
                   <% end %>
                   <% end %>
+
+                  <% unless user_signed_in?%>
+                  <div class='star-btn2'>
+                    <%= image_tag "favorite1.png", class:"good-icon2" %>
+                  </div>
+                  <% end %>
                   <span class='star-count'><%= item.favorites.count %></span>
 
                 </div>
-            </div>
           </div>
         </div>
       </li>

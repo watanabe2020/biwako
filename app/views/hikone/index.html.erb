@@ -39,8 +39,13 @@
                   <% end %>
                   <% end %>
                   <span class='star-count'><%= item.favorites.count %></span>
+
+                  <% unless user_signed_in?%>
+                  <div class='star-btn2'>
+                    <%= image_tag "favorite1.png", class:"good-icon2" %>
+                  </div>
+                  <% end %>
               
-                </div>
             </div>
           </div>
         </div>
