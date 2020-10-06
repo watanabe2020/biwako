@@ -46,23 +46,10 @@ class ItemsController < ApplicationController
   end
 
   def my
-    # @item = Item.find(params[:user_id])
     @items = Item.where(user_id: current_user.id)
   end
 
-  # def search
-  #   @items = Item.search(params[:keyword])
-  # end
-
-  # def search
-  #   @results = @p.result.includes(:items) # 検索条件にマッチした商品の情報を取得
-  # end
-
   private
-
-  # def search_item
-  #   @p = Item.ransack(params[:q]) # 検索オブジェクトを生成
-  # end
 
   def user_params
     params.require(:item).permit(:image, :comment, :place_id, :weather_id, :wind_id, :water_temperature_id, :wave_id, :water_quality_id, :aquatic_plant_id, :bait_id).merge(user_id: current_user.id)
