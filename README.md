@@ -22,6 +22,83 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# ツール・ライブラリの名前
+ 
+概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要
+ 
+## 簡単な説明
+ 
+簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明
+簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明
+簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明
+簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明
+ 
+***デモ***
+ 
+![デモ](https://image-url.gif)
+ 
+## 機能
+ 
+- 機能1（UI/計算 etc ...）
+- 機能2
+- 機能3
+- ...
+ 
+他の機能はこちらを参照して下さい。`awesome-tool --help`.
+ 
+## 必要要件
+ 
+- 要件
+- 要件
+- 要件
+- ...
+ 
+## 使い方
+ 
+1. 使い方
+2. 使い方
+3. 使い方
+ 
+## インストール
+ 
+```
+$ git clone https://github.com/TomoakiTANAKA/awesome-tool
+$ cd awesome-tool
+$ sh setup.sh
+$ ~do anything~
+```
+ 
+## テスト
+ 
+1. 使い方
+2. 使い方
+3. 使い方
+ 
+## デプロイ
+ 
+1. デプロイ
+2. デプロイ
+3. デプロイ
+ 
+## その他
+ 
+その他その他その他その他
+その他その他その他その他
+その他その他その他その他
+その他その他その他その他
+ 
+## 作者
+ 
+[@TanakanoAnchan](https://twitter.com/TanakanoAnchan)
+mail to: xxxx@mail.com
+ 
+## ライセンス
+ 
+[MIT](http://TomoakiTANAKA.mit-license.org)</blockquote>
+
+
+
 ## users テーブル
 
 | Column   | Type   | Options     |
@@ -38,18 +115,18 @@ Things you may want to cover:
 
 ## items テーブル
 
-| Column            | Type       | Options                        |      |
-| ----------------- | ---------- | ------------------------------ | ---- |
-| user              | references | null: false, foreign_key: true |      |
-| comment           | string     | null: false                    | ひとこと |
-| place             | string     | null: false                    | 場所   |
-| weather           | integer    | null: false                    | 天気   |
-| wind              | integer    | null: false                    | 風    |
-| water temperature | integer    | null: false                    | 水温   |
-| wave              | integer    | null: false                    | 波    |
-| water quality     | integer    | null: false                    | 水質   |
-| aquatic plants    | integer    | null: false                    | 水草   |
-| bait              | integer    | null: false                    | ベイト  |
+| Column            | Type       | Options                        |
+| ----------------- | ---------- | ------------------------------ |
+| user              | references | null: false, foreign_key: true |
+| comment           | string     | null: false                    |
+| place             | string     | null: false                    |
+| weather           | integer    | null: false                    |
+| wind              | integer    | null: false                    |
+| water temperature | integer    | null: false                    |
+| wave              | integer    | null: false                    |
+| water quality     | integer    | null: false                    |
+| aquatic plants    | integer    | null: false                    |
+| bait              | integer    | null: false                    |
 
 
 ### Association
