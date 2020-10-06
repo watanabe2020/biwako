@@ -26,6 +26,8 @@ Things you may want to cover:
 # タイトル
  
 琵琶湖の最新情報を知るためのアプリケーション
+![aicon2](https://user-images.githubusercontent.com/69565519/95170939-23da8100-07f0-11eb-870b-df2bdeea998a.png)
+
 
 ## 制作背景
 バスフィッシングは、非常にゲーム性の高い釣りのジャンルで、環境の情報が重要な要素になっています。しかし、琵琶湖などの広大なフィールドは環境が変わりやすく、現地の状況を知るためにはその場所に行くしかありませんでした。このような問題を解決するために、現地にいる人が、詳細な環境を投稿でき共有ばしフィッシングをサポートできるアプリを制作しました。
@@ -35,10 +37,10 @@ Things you may want to cover:
  
 - ログイン機能
 - 画像、情報投稿機能
-- コメント機能
+- コメント機能
 - いいね機能
  
-他の機能はこちらを参照して下さい。`https://biwako.herokuapp.com/`.
+他の機能はこちらを参照して下さい。`https://biwako.herokuapp.com/`
 
 ## 使用技術(開発環境)
 1. Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello /AWS / S3 / illustratuer/photshop
@@ -64,7 +66,7 @@ Things you may want to cover:
 [@RyouichiWatanabe]mail to:wwwatapon@yahoo.co.jp
  
 
-
+## DB設計
 
 ## users テーブル
 
