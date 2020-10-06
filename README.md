@@ -25,7 +25,7 @@ Things you may want to cover:
 
 # タイトル
  
- _琵琶湖の最新情報を知るためのアプリケーション_
+### 琵琶湖の最新情報を知るためのアプリケーション_
 ![aicon2](https://user-images.githubusercontent.com/69565519/95170939-23da8100-07f0-11eb-870b-df2bdeea998a.png)
 
 
@@ -114,7 +114,7 @@ Things you may want to cover:
 | user   | references | null: false, foreign_key: true |
 | item   | references | null: false, foreign_key: true |
 | text   | string     | null: false                    |
-|        |            |                                |
+
 
 ### Association
 
