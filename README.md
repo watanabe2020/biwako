@@ -23,79 +23,46 @@ Things you may want to cover:
 
 * ...
 
-# ツール・ライブラリの名前
+# タイトル
  
-概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要概要
+琵琶湖の最新情報を知るためのアプリケーション
+
+## 制作背景
+バスフィッシングは、非常にゲーム性の高い釣りのジャンルで、環境の情報が重要な要素になっています。しかし、琵琶湖などの広大なフィールドは環境が変わりやすく、現地の状況を知るためにはその場所に行くしかありませんでした。このような問題を解決するために、現地にいる人が、詳細な環境を投稿でき共有ばしフィッシングをサポートできるアプリを制作しました。
  
-## 簡単な説明
- 
-簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明
-簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明
-簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明
-簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明
- 
-***デモ***
- 
-![デモ](https://image-url.gif)
  
 ## 機能
  
-- 機能1（UI/計算 etc ...）
-- 機能2
-- 機能3
-- ...
+- ログイン機能
+- 画像、情報投稿機能
+- コメント機能
+- いいね機能
  
-他の機能はこちらを参照して下さい。`awesome-tool --help`.
+他の機能はこちらを参照して下さい。`https://biwako.herokuapp.com/`.
+
+## 使用技術(開発環境)
+1. Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello /AWS / S3 / illustratuer/photshop
+
  
-## 必要要件
+## テスト用アカウント
  
-- 要件
-- 要件
-- 要件
-- ...
- 
-## 使い方
- 
-1. 使い方
-2. 使い方
-3. 使い方
- 
-## インストール
- 
-```
-$ git clone https://github.com/TomoakiTANAKA/awesome-tool
-$ cd awesome-tool
-$ sh setup.sh
-$ ~do anything~
-```
- 
-## テスト
- 
-1. 使い方
-2. 使い方
-3. 使い方
- 
+1. test@gmail.com
+2. test1234
+
 ## デプロイ
  
-1. デプロイ
-2. デプロイ
-3. デプロイ
+1. heroku
+2. 画像の保存にAWS S3を使用 
  
-## その他
+## これからの実装
  
-その他その他その他その他
-その他その他その他その他
-その他その他その他その他
-その他その他その他その他
+1. その日だけ投稿、表示できるページ
+2. 
  
 ## 作者
  
-[@TanakanoAnchan](https://twitter.com/TanakanoAnchan)
-mail to: xxxx@mail.com
+[@RyouichiWatanabe]mail to:wwwatapon@yahoo.co.jp
  
-## ライセンス
- 
-[MIT](http://TomoakiTANAKA.mit-license.org)</blockquote>
 
 
 
