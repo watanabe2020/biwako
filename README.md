@@ -32,10 +32,8 @@ Things you may want to cover:
 ## 制作背景
 バスフィッシングは、非常にゲーム性の高い釣りのジャンルで、環境の情報が重要な要素になっています。しかし、琵琶湖などの広大なフィールドは環境が変わりやすく、現地の状況を知るためにはその場所に行くしかありませんでした。このような問題を解決するために、現地にいる人が、詳細な環境を投稿でき共有ばしフィッシングをサポートできるアプリを制作しました。
  
-## デモ
-
+## 全体図
 ![demo](https://gyazo.com/a5cd6adb294b707d2949cd1c8b235e9b/raw)
-![demo](https://gyazo.com/001339e4a7edc931908c040e28a383b7/raw)
 
 ## 機能
  
@@ -43,8 +41,8 @@ Things you may want to cover:
 - 画像、情報投稿機能
 - コメント機能
 - いいね機能
- 
-他の機能はこちらを参照して下さい。`https://biwako.herokuapp.com/`
+ ![demo](https://gyazo.com/001339e4a7edc931908c040e28a383b7/raw)
+その他の機能はこちらを参照して下さい。`https://biwako.herokuapp.com/`
 
 ## 使用技術(開発環境)
 1. Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello /AWS / S3 / illustratuer/photshop
