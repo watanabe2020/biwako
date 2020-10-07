@@ -4,7 +4,9 @@
  
 ### 琵琶湖の最新情報を知るためのアプリケーション
 <!-- ![aicon2](https://user-images.githubusercontent.com/69565519/95170939-23da8100-07f0-11eb-870b-df2bdeea998a.png) issuesにアップするやり方-->
+<div style="text-align: center;">
 <img src="https://user-images.githubusercontent.com/69565519/95170939-23da8100-07f0-11eb-870b-df2bdeea998a.png" width="30%">
+</div>
 
 
 ## 制作背景
