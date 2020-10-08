@@ -44,7 +44,7 @@
   font-weight: bold;
   /* min-width: 170px; */
   margin-top: 10px;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .select-box {
@@ -125,7 +125,7 @@
 }
 
 .select-box {
-  margin:10px 0;
+  margin: 10px 0;
 }
 
 /* /商品の詳細など */
@@ -150,7 +150,7 @@
   /* min-width: 170px; */
   display: flex;
   align-items: center;
-  
+
 }
 
 .sell-yen {
@@ -181,11 +181,11 @@
 .sell-btn-contents {
   width: 100%;
   text-align: center;
-  
+
 }
 
 .sell-btn {
-  background-color:  #41d0ff;
+  background-color: #41d0ff;
   border-radius: 100px;
   border: 1px solid #41d0ff;
   color: #fff;
@@ -234,6 +234,6 @@
   font-size: 13px;
 }
 
-#image-list img{
+#image-list img {
   width: 70%;
 }

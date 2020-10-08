@@ -1,5 +1,9 @@
 <%= render "shared/header" %>
 
+<% unless user_signed_in? %>
+  <%= image_tag "how_to_use.png",class:"how_to_use" %>
+<% end %>
+  
 <div class='rank'>
 <ul>
 <li><%= link_to 'すべての投稿', all_index_path , method: :get, class: "item-red-btn" %></li>

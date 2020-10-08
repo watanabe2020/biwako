@@ -93,11 +93,11 @@
   padding: 1vh 0;
 }
 
-.nav ul{
+.nav ul {
   margin-left: auto;
 }
 
-.nav ul li a{
+.nav ul li a {
   color: white;
   background-color: #81e0ff;
   text-decoration: none;
@@ -108,32 +108,32 @@
   /* margin-left:10px ; */
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover {
   background: transparent;
-  background-color: #1bbef5;;
-  color:white;
+  background-color: #1bbef5;
+  ;
+  color: white;
   transition: 0.4s;
 }
 
-.rogo{
- display: flex;
-}
-.rogo_biwako{
- height: 140px;
- color: white;
+.rogo {
+  display: flex;
 }
 
-.title{
-  margin-top:15px;
+.rogo_biwako {
+  height: 140px;
+  color: white;
+}
+
+.title {
+  margin-top: 15px;
   margin-left: 20px;
-  padding:0;
+  padding: 0;
   width: 0;
 }
 
-.side{
+.side {
 
   width: 550px;
-font-size: 25px;
+  font-size: 25px;
 }
-
-
