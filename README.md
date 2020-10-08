@@ -8,6 +8,8 @@
 <img src="https://user-images.githubusercontent.com/69565519/95170939-23da8100-07f0-11eb-870b-df2bdeea998a.png" width="30%">
 </div>
 
+## URL
+SAISIN `https://biwako.herokuapp.com/`
 
 ## 制作背景
 釣れた結果を知るのではなく、釣れる環境をみんなで共有するアプリケーション
@@ -16,8 +18,9 @@
 
 ## SAISINの特徴
 <div style="text-align: center;">
-<img src="https://user-images.githubusercontent.com/69565519/95425514-5a92d180-097f-11eb-95c5-1cea83c0f22c.png" width="100%">
+<img src="https://user-images.githubusercontent.com/69565519/95426759-667f9300-0981-11eb-8249-0c75fd17fb9f.jpg" width="100%">
 </div>
+
 ## 全体図
 ![demo](https://gyazo.com/a5cd6adb294b707d2949cd1c8b235e9b/raw)
 
@@ -28,13 +31,9 @@
 - コメント機能
 - いいね機能
  ![demo](https://gyazo.com/001339e4a7edc931908c040e28a383b7/raw)
-その他の機能はこちらを参照して下さい。`https://biwako.herokuapp.com/`
 
 ## 使用技術(開発環境)
 1. Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello /AWS / S3 / illustratuer/photshop
-
- 
-
 
 ## テスト用アカウント
  
@@ -48,8 +47,7 @@
  
 ## これからの実装
  
-1. その日だけ投稿、表示できるページ
-2. 
+1. その日だけ投稿、表示できるページ 
  
 ## 作者
  
