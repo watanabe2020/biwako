@@ -22,7 +22,7 @@ SAISIN `https://biwako.herokuapp.com/`
 </div>
 <br>
 <br>
-<br>
+
 ## 全体図
 ![demo](https://gyazo.com/a5cd6adb294b707d2949cd1c8b235e9b/raw)
 <br>
@@ -34,7 +34,6 @@ SAISIN `https://biwako.herokuapp.com/`
  <img src="https://user-images.githubusercontent.com/69565519/95549335-0bfa3b80-0a42-11eb-9823-7f63eda1ee17.png" width="100%">
 
 ## 機能
- 
 - ログイン機能
 - 画像、情報投稿機能
 - コメント機能
@@ -43,7 +42,8 @@ SAISIN `https://biwako.herokuapp.com/`
 <br>
 <br>
 <br>
- <img src="https://user-images.githubusercontent.com/69565519/95549263-e53c0500-0a41-11eb-90d7-86b412834b54.png" width="50%"><br><img src="https://user-images.githubusercontent.com/69565519/95549302-f7b63e80-0a41-11eb-9ba8-62d5952fe4c8.png" width="35%">
+- 投稿画面
+ <img src="https://user-images.githubusercontent.com/69565519/95549263-e53c0500-0a41-11eb-90d7-86b412834b54.png" width="50%"><img src="https://user-images.githubusercontent.com/69565519/95549302-f7b63e80-0a41-11eb-9ba8-62d5952fe4c8.png" width="35%">
 
 
 ## 使用技術(開発環境)
