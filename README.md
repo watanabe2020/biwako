@@ -46,16 +46,15 @@
 - コメント機能
 - いいね機能
   ![demo](https://gyazo.com/001339e4a7edc931908c040e28a383b7/raw)
+  <br>
+  <br>
+  <br>
   ### 投稿画面
-  <br>
-  <br>
-  <br>
   <img src="https://user-images.githubusercontent.com/69565519/95549263-e53c0500-0a41-11eb-90d7-86b412834b54.png" width="50%">
   <br>
   <br>
+  <br>
   ### 投稿詳細画面
-  <br>
-  <br>
   <img src="https://user-images.githubusercontent.com/69565519/95549302-f7b63e80-0a41-11eb-9ba8-62d5952fe4c8.png" width="50%">
 
 ## 使用技術(開発環境)
