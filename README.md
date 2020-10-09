@@ -23,9 +23,9 @@ SAISIN `https://biwako.herokuapp.com/`
 
 ## 全体図
 ![demo](https://gyazo.com/a5cd6adb294b707d2949cd1c8b235e9b/raw)
-
-
-
+<br>
+<br>
+<br>
  <img src="https://user-images.githubusercontent.com/69565519/95549335-0bfa3b80-0a42-11eb-9823-7f63eda1ee17.png" width="100%">
 
 ## 機能
