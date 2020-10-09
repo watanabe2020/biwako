@@ -49,6 +49,8 @@ SAISIN `https://biwako.herokuapp.com/`
   <br>
   <br>
   <img src="https://user-images.githubusercontent.com/69565519/95549263-e53c0500-0a41-11eb-90d7-86b412834b54.png" width="50%">
+  <br>
+  <br>
   投稿詳細画面
   <br>
   <br>
