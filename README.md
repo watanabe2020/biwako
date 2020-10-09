@@ -38,7 +38,9 @@
   ### すべての投稿画面
 
   <img src="https://user-images.githubusercontent.com/69565519/95549335-0bfa3b80-0a42-11eb-9823-7f63eda1ee17.png" width="100%">
-
+  <br>
+  <br>
+  <br>
   ## 機能
 
 - ログイン機能
@@ -54,7 +56,7 @@
   <br>
   <br>
   <br>
-  
+
   ### 投稿詳細画面
   <img src="https://user-images.githubusercontent.com/69565519/95549302-f7b63e80-0a41-11eb-9ba8-62d5952fe4c8.png" width="50%">
 
