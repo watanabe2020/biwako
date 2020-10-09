@@ -20,7 +20,9 @@ SAISIN `https://biwako.herokuapp.com/`
 <div style="text-align: center;">
 <img src="https://user-images.githubusercontent.com/69565519/95426759-667f9300-0981-11eb-8249-0c75fd17fb9f.jpg" width="100%">
 </div>
-
+<br>
+<br>
+<br>
 ## 全体図
 ![demo](https://gyazo.com/a5cd6adb294b707d2949cd1c8b235e9b/raw)
 <br>
@@ -38,8 +40,10 @@ SAISIN `https://biwako.herokuapp.com/`
 - コメント機能
 - いいね機能
  ![demo](https://gyazo.com/001339e4a7edc931908c040e28a383b7/raw)
-
- <img src="https://user-images.githubusercontent.com/69565519/95549263-e53c0500-0a41-11eb-90d7-86b412834b54.png" width="50%">                              <img src="https://user-images.githubusercontent.com/69565519/95549302-f7b63e80-0a41-11eb-9ba8-62d5952fe4c8.png" width="35%">
+<br>
+<br>
+<br>
+ <img src="https://user-images.githubusercontent.com/69565519/95549263-e53c0500-0a41-11eb-90d7-86b412834b54.png" width="50%"><br><img src="https://user-images.githubusercontent.com/69565519/95549302-f7b63e80-0a41-11eb-9ba8-62d5952fe4c8.png" width="35%">
 
 
 ## 使用技術(開発環境)
