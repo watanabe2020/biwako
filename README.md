@@ -9,7 +9,7 @@
 
   ## URL
 
-  SAISIN `https://biwako.herokuapp.com/`
+  SAISIN 'http://3.113.187.249:3000/'
 
   ## 制作背景
 
