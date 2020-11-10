@@ -63,7 +63,7 @@
 
 ## 使用技術(開発環境)
 
-1. Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello /AWS / S3 / illustratuer/photshop
+1. Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello /AWS / S3 / EC2 /illustratuer/photshop
 
 ## テスト用アカウント
 
@@ -72,7 +72,7 @@
 
 ## デプロイ
 
-1. heroku
+1. amazon /AWS / S3 / EC2 
 2. 画像の保存に AWS S3 を使用
 
 ## これからの実装
