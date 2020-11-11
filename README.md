@@ -61,7 +61,6 @@
   ### 投稿詳細画面
   <img src="https://user-images.githubusercontent.com/69565519/95549302-f7b63e80-0a41-11eb-9ba8-62d5952fe4c8.png" width="50%">
 
-  <img src="https://user-images.githubusercontent.com/69565519/98781981-91ef1500-243a-11eb-912b-f50b7ce73cfc.png">
 
 ## 使用技術(開発環境)
 
