@@ -9,7 +9,7 @@
 .item-box {
   background-color: #FFF;
   width: 70vw;
-  min-width: 1200px;
+  /* min-width: 1200px; */
   padding: 3vh 15vw;
   display: flex;
   flex-direction: column;
@@ -239,4 +239,9 @@
   height: auto;
   margin-right: 20px;
   margin: 10px 10px;
+}
+
+
+.list-pict{
+  width: 80%;
 }

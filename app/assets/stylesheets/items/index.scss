@@ -144,11 +144,11 @@ header {
   position: relative;
 }
 
-.list-pict {
-  margin-bottom: 20px;
-  width: 70%;
-  margin: 0 260px;
-}
+// .list-pict {
+//   margin-bottom: 20px;
+//   width: 70%;
+//   margin: 0 260px;
+// }
 
 .reason-list-number {
   position: absolute;
@@ -224,7 +224,8 @@ header {
 
 /* FURIMAの特徴 */
 .feature-contents {
-  padding: 5vh 15vw;
+  padding: 5vh 15vw 0 0 ;
+  margin-left: 100px;
 }
 
 .feature-contents>.title {
@@ -397,7 +398,7 @@ header {
 .said_nav {
   // background-color: #a4e6fa40;
   width: 20vw;
-  height: 100vh;
+  // height: 100vh;
   margin-left: 20px;
   margin-top: 40px;
   border-radius: 30px;
@@ -405,8 +406,7 @@ header {
 
 .said_nav ul {
   margin: 0px 0 0px 30px;
-  width: 200%;
-  height: 100vh;
+  // height: 100vh;
   align-items: center;
 }
 
@@ -468,7 +468,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 80%;
-  left: 28%;
+  left: 17%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -494,8 +494,8 @@ header {
 .hokko {
   position: absolute;
   /*絶対配置*/
-  top: 33%;
-  left: 60%;
+  top: 34%;
+  left: 47%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -521,8 +521,8 @@ header {
 .hamaotu {
   position: absolute;
   /*絶対配置*/
-  top: 74%;
-  left: 27%;
+  top: 69%;
+  left: -4%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -549,7 +549,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 26%;
-  left: 46%;
+  left: 15%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -575,8 +575,8 @@ header {
 .yabasi {
   position: absolute;
   /*絶対配置*/
-  top: 74%;
-  left: 47%;
+  top: 81%;
+  left: 23%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -602,8 +602,8 @@ header {
 .seta {
   position: absolute;
   /*絶対配置*/
-  top: 93%;
-  left: 40%;
+  top: 95%;
+  left: 14%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -630,7 +630,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 33%;
-  left: 55%;
+  left: 31%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -657,7 +657,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 42%;
-  left: 36%;
+  left: 5%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -686,8 +686,8 @@ header {
 .okinosima {
   position: absolute;
   /*絶対配置*/
-  top: 66%;
-  left: 48%;
+  top: 73%;
+  left: 25%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -714,7 +714,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 45%;
-  left: 48%;
+  left: 24%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -741,7 +741,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 56%;
-  left: 67%;
+  left: 54%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -768,7 +768,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 66%;
-  left: 31%;
+  left: 4%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -795,7 +795,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 28%;
-  left: 68%;
+  left: 51%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -822,7 +822,7 @@ header {
   position: absolute;
   /*絶対配置*/
   top: 12%;
-  left: 54%;
+  left: 35%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -998,8 +998,8 @@ li{
   width: 200px;
   position: absolute;
   right: 370px;
-  top: 30%;
-  left: 1%;
+  top: 27%;
+  left: -1%;
 }
 .background-nannko{
   border: solid 3px #72d7f8;
@@ -1047,4 +1047,12 @@ li{
 
 .hidden{
   display: none;
+}
+
+.top_biwako{
+  padding: 5vh 15vw;
+  margin-left: 180px;
+  position: relative;
+  width: 80%;
+
 }
