@@ -7,7 +7,7 @@
 <div class='rank'>
 <ul>
 <li><%= link_to 'すべての投稿', all_index_path , method: :get, class: "item-red-btn" %></li>
-<li><%= link_to 'いいねランキング', rank_index_path , method: :get, class: "item-red-btn" %></li>
+<li><%= link_to '今熱い〜ねランキング', rank_index_path , method: :get, class: "item-red-btn" %></li>
 </ul>
 </div>
 
@@ -22,7 +22,8 @@
 </div>
 
 <div class='item-contents'>
-  <h2 class='title2'>最新TOP3</h2>
+  <h2 class='title2'>最新情報</h2>
+  <h2 class='title_border2'></h2>
   <ul class='item-lists'>
 
     <% @items.each do |item| %>
@@ -75,7 +76,7 @@
     <% end %>
 
     <div class='purchase-btn'>
-      <span class='purchase-btn-text'>投稿する</span>
+      <span class='purchase-btn-text'>投稿</span>
       <%= link_to new_item_path do%>
       <%= image_tag 'biwako4.png' , size: '185x50' ,class: "purchase-btn-icon" %>
       <% end %>

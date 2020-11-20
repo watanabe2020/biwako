@@ -4,7 +4,7 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 3vw;
+  padding: 0 3vw;
   display: flex;
   flex-direction: column;
 }
@@ -101,8 +101,8 @@
   color: white;
   background-color: #81e0ff;
   text-decoration: none;
-  padding: 20px 40px;
-  font-size: 22px;
+  padding: 10px 40px;
+  font-size: 15px;
   border-radius: 100px;
   font-weight: bold;
   /* margin-left:10px ; */
@@ -121,13 +121,15 @@
 }
 
 .rogo_biwako {
-  height: 140px;
+  width: 55px;
+  height: 90px;
   color: white;
+  font-size: 30px;
+  margin-top: 10px;
 }
 
 .title {
-  margin-top: 15px;
-  margin-left: 20px;
+  margin-left: 10px;
   padding: 0;
   width: 0;
 }
@@ -135,5 +137,6 @@
 .side {
 
   width: 550px;
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
