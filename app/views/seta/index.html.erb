@@ -11,19 +11,28 @@
         <div class='item-img-content'>
           <%= link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
 
-          <div class='item-info'>
-            <h3 class='item-name'>
-              <%= item.user.nickname %>
-            </h3>
+                <div class='item-info'>
+        <div class = "icons">
+          <h3 class='item-name'>
+          <span class='icons-img1'><%= image_tag 'icons1.png'  %></span>
+            <%= item.user.nickname %>
+          </h3>
+        </div>
 
+          <div class = "icons">
             <h3 class='item-name'>
-              <%= item.comment %>
+              <span class='icons-img2'><%= image_tag 'icons2.png'  %></span>
+                <%= item.comment %>
             </h3>
+          </div>
 
+          <div class = "icons">
             <div class='item-price'>
               <h3 class='item-name'>
-                <span><%= item.place.name %></span>
+                <span class='icons-img3'><%= image_tag 'icons3.png'  %></span>
+                  <span><%= item.place.name %></span>
               </h3>
+            </div>
 
               <% if user_signed_in? && current_user%>
               <% if current_user.already_favorited?(item) %>
