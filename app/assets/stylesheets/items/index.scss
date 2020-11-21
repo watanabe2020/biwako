@@ -344,6 +344,23 @@ header {
 
 .item-name {
   font-size: 2.5vh;
+  
+}
+
+.icons{
+  display: flex;
+}
+.icons-img1 img{
+  width: 18px;
+  margin-right:10px;
+}
+.icons-img2 img{
+  width: 20px;
+  margin-right:10px;
+}
+.icons-img3 img{
+  width: 18px;
+  margin-right:10px;
 }
 
 .item-price {
@@ -419,13 +436,13 @@ header {
 }
 
 .said_nav ul li a {
-  border: solid 3px #72d7f8;
+  border: solid 2px #72d7f8;
   color: #41d0ff;;
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
   padding: 5px 15px;
-  font-size: 22px;
+  font-size: 17px;
   border-radius: 100px;
   font-weight: bold;
 }
@@ -482,7 +499,7 @@ header {
   border-top-style:none; 
   border-left-style:none; 
   border-right:none; 
-  width: 95%;
+  width: 90%;
   margin-bottom: 20px;
 }
 
@@ -1017,20 +1034,20 @@ li{
 // JSリスト
 
 
-.show-lists{
-  width: 200px;
-  position: absolute;
-  right: 370px;
-  top: 37%;
-  left: -1%;
-}
+// .show-lists{
+//   width: 200px;
+//   position: absolute;
+//   right: 370px;
+//   top: 27%;
+//   left: -1%;
+// }
 .background-nannko{
-  border: solid 3px #72d7f8;
+  border: solid 2px #72d7f8;
   color: #41d0ff;;
   font-weight: bold;
   text-decoration: none;
   padding: 4px;
-  font-size: 23px;
+  font-size: 17px;
   border-radius: 100px;
   font-weight: bold;
   width: 150px;
@@ -1041,15 +1058,15 @@ li{
   user-select: none;
 }
 .background-hokko{
-  border: solid 3px #72d7f8;
-  color: #41d0ff;;
+  border: solid 2px #72d7f8;
+  color: #41d0ff;
   font-weight: bold;
   text-decoration: none;
   padding: 4px;
-  font-size: 23px;
+  font-size: 17px;
   border-radius: 100px;
   font-weight: bold;
-  width: 150px;
+  width: 110px;
   text-align: center;
   left: -178px;
   top: 60px;
@@ -1070,6 +1087,11 @@ li{
 
 .hidden{
   display: none;
+  width: 200px;
+  position: absolute;
+  right: 370px;
+  top: 27%;
+  left: -1%;
 }
 
 .top_biwako{
