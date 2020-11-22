@@ -103,7 +103,7 @@
             </div>
 
             <div class="destroy">
-              <% if user_signed_in? && current_user.id == @item.user_id %>
+              <% if user_signed_in? && current_user.id == comment.user_id %>
               <%= link_to (image_tag "destroy.png", class: "destroy-img"),comment_path(comment.id),method: :delete %>
               <% end %>
             </div>
@@ -111,6 +111,7 @@
 
           <div class="comment-content">
             <%= comment.text %>
+            <%= comment.id %>
           </div>
           <% end %>
           <% end %>
