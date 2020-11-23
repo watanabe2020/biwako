@@ -76,3 +76,5 @@ end
 end
 
   gem 'rails-i18n'
+
+  gem 'jquery-rails'

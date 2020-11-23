@@ -10,6 +10,7 @@ require("channels")
 require("../preview")
 require("../index")
 require("../list")
+require('jquery')
 
 
 
