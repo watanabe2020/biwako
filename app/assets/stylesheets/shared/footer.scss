@@ -1,5 +1,14 @@
-/* 下部広告部分 */
-/* items/index.htmlの広告cssを所々使いまわしています。 */
+.my_room{
+  margin-top: 10px;
+}
+
+.my_room a{
+color: white;
+}
+.my_room:hover a{
+color:#1bbef5;
+}
+
 
 .ad-footer-contents {
   width: 100vw;
@@ -28,7 +37,7 @@
 /* //下部広告部分 */
 
 .footer {
-  margin-top: 100px;
+  margin-top: 40px;
   width: 100vw;
   padding: 5vh 0;
   color: #FFF;
@@ -66,3 +75,14 @@
 .footer>p {
   font-size: 14px;
 }
+
+@media (min-width: 600px) {
+  .footer {
+    margin-top: 100px;
+    width: 100vw;
+    padding: 5vh 0;
+    color: #FFF;
+    background-color: #272727;
+    text-align: center;
+  }
+  }

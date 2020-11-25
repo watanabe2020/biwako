@@ -1,0 +1,24 @@
+<%= render "shared/second-header"%>
+
+<%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
+
+<div class='form-wrap'>
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      利用規約
+    </h1>
+  </div>
+
+  <div class="form-group">
+    <h2 class='form-bottom-text'>
+      <p>ユーザーは，自己の責任において，本サービスを使用してください。<br>当社は、このサイトで何が起きようと全てに対して一切の責任を負わないものとします。</p>
+    </h2>
+<%= link_to "戻る", :back , method: :get, class: "item-top-btn-show" %>
+  </div>
+  <div class='register-btn'>
+  </div>
+  <p class='register-info'></p>
+</div>
+<% end %>
+
+<%= render "shared/second-footer"%>

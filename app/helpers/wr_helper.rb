@@ -1,0 +1,2 @@
+module WrHelper
+end

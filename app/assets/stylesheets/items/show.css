@@ -6,16 +6,6 @@
   /* padding: 5vh 0; */
 }
 
-.item-box {
-  background-color: #FFF;
-  width: 70vw;
-  /* min-width: 1200px; */
-  padding: 3vh 15vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .item-box>.name {
   text-align: center;
   font-weight: bold;
@@ -75,7 +65,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 10px;
 }
 
 .or-text {
@@ -119,7 +109,7 @@
 
 .favorite-btn {
   border-radius: 40px;
-  width: 15vw;
+  width: 130px;
   /* min-width: 200px; */
   color: #217aff;
   border: 1px solid #217aff;
@@ -132,7 +122,7 @@
 
 .comment-box {
   width: 40vw;
-  background-color: #81e0ff;
+  /* background-color: #81e0ff; */
   margin: 5vh 0;
   text-align: center;
 }
@@ -178,7 +168,7 @@
   padding-bottom: 5px;
   display: flex;
   align-items: center;
-  background: #81e0ff;
+  /* background: #81e0ff; */
   ;
 
 }
@@ -244,4 +234,80 @@
 
 .list-pict{
   width: 80%;
+}
+
+
+@media (min-width: 300px) {
+  .item-box {
+    background-color: #FFF;
+    width: 360px;
+    /* min-width: 1200px; */
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .comment-box {
+    width: 360px;
+    /* background-color: #81e0ff; */
+    margin: 5vh 0;
+    text-align: center;
+  }
+
+}
+
+
+@media (min-width: 499px) {
+  .item-box {
+    background-color: #FFF;
+    width: 70vw;
+    /* min-width: 1200px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.nickname {
+    font-size: 15px;
+    font-weight: bold;
+    /* color: #217aff; */
+}
+  
+.comment-content {
+  margin-left: 20px;
+  color: #217aff;
+  text-align: left;
+  font-size: 17px;
+  /* margin-bottom: 10px; */
+}
+
+  .comment-box {
+    width: 70vw;
+    /* background-color: #81e0ff; */
+    margin: 5vh 0;
+    text-align: center;
+  }
+
+  
+}
+
+@media (min-width: 600px) {
+  .item-box {
+    background-color: #FFF;
+    width: 70vw;
+    /* min-width: 1200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom_btn_nannko {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+  }
+  
 }

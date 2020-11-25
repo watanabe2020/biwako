@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'wr/index'
+  get 'my/room'
+  get 'my/index'
   get 'all/index'
   get 'rank/index'
   get 'kihama/index'
@@ -31,4 +34,6 @@ Rails.application.routes.draw do
   resources :hamaootu, only: :index
   resources :karasaki, only: :index
   resources :katata, only: :index
+  resources :terms, only: :index
+  resources :myroom, only: :index
 end

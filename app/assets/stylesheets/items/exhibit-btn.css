@@ -1,13 +1,16 @@
 .purchase-btn {
-  width: 100px;
+  color: yellow;
+  width: 70px;
   background: #41d0ff;;
   text-align: center;
   border-radius: 5%;
   bottom: 32px;
   right: 32px;
   position: fixed;
-  padding: 10px 0px;
+  padding: 5px;
 }
+
+
 
 .purchase-btn-text {
   color: #fff;
@@ -20,4 +23,23 @@
 
 .purchase-btn-icon {
   width: 60%;
+}
+
+
+@media (min-width: 600px) {
+
+body {
+  /* background-color:yellow; */
+}
+
+.purchase-btn {
+  width: 100px;
+  background: #41d0ff;;
+  text-align: center;
+  border-radius: 5%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 10px 0px;
+}
 }
