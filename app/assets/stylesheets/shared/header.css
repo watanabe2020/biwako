@@ -102,7 +102,7 @@
   background-color: #81e0ff;
   text-decoration: none;
   padding: 10px 40px;
-  font-size: px;
+  font-size: 13px;
   border-radius: 100px;
   font-weight: bold;
   /* margin-left:10px ; */
@@ -175,7 +175,7 @@
   }
 
   .lists-right li{ 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .side { 
     width: 157px;
