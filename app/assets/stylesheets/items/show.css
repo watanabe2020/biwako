@@ -31,22 +31,22 @@
   text-align: center;
   background-color: #41d0ff;
   border-radius: 100px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: #FFF;
   margin: 20px 0px;
-  padding: 2vh 10vw;
+  padding: 1vh 3vw;
 }
 
 .item-top-btn-show {
   text-align: center;
   background-color: #41d0ff;
   border-radius: 100px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: #FFF;
   margin: 20px 0px;
-  padding: 1vh 4vw;
+  padding: 1vh 6vw;
 }
 
 .item-top-btn-nannko {
@@ -213,7 +213,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
+  padding: 3vh 0;
+  background-color: #fff;
 }
 
 .destroy-img {
