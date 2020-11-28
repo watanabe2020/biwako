@@ -2210,6 +2210,15 @@ transition: 0.4s;
 
 @media screen and (min-width:601px) and ( max-width:799px){
 
+  .good-icon {
+    width: 70px;
+    margin-left: 30px;
+  }
+  .good-icon2 {
+    width: 70px;
+    margin-left:30px;
+  }
+  
   .my_img{
     width: 20%;
     height: 20%;
@@ -3427,4 +3436,9 @@ li{
   margin-right:10px;
   margin-top:5px;
 }
+}
+
+
+.log-out-icon-flex{
+  display:flex;
 }
