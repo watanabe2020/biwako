@@ -159,6 +159,7 @@
   border-radius: 100px;
   margin-bottom: 2vh;
   font-weight: bold;
+  -webkit-appearance: none;
 }
 
 .login_comment {
@@ -234,7 +235,7 @@
 }
 
 
-@media (min-width: 300px) {
+@media screen and (min-width:300px) and ( max-width:498px)  {
   .item-box {
     background-color: #FFF;
     width: 360px;
@@ -247,6 +248,18 @@
     width: 360px;
     margin: 5vh 0;
     text-align: center;
+  }
+
+  .item-top-btn-nannko {
+    text-align: center;
+    background-color: #41d0ff;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    margin: 20px 0px;
+    padding: 0vh 2vw;
+    margin:20px 0 10px 0 ;
   }
 
 }
