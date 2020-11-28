@@ -28,10 +28,6 @@
 
 @media (min-width: 600px) {
 
-body {
-  /* background-color:yellow; */
-}
-
 .purchase-btn {
   width: 100px;
   background: #41d0ff;;

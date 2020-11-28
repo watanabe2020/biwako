@@ -238,7 +238,6 @@
   .item-box {
     background-color: #FFF;
     width: 360px;
-    /* min-width: 1200px; */
     padding:10px;
     display: flex;
     flex-direction: column;
@@ -246,7 +245,6 @@
   }
   .comment-box {
     width: 360px;
-    /* background-color: #81e0ff; */
     margin: 5vh 0;
     text-align: center;
   }
@@ -258,7 +256,6 @@
   .item-box {
     background-color: #FFF;
     width: 70vw;
-    /* min-width: 1200px; */
 
     display: flex;
     flex-direction: column;
@@ -268,7 +265,6 @@
 .nickname {
     font-size: 15px;
     font-weight: bold;
-    /* color: #217aff; */
 }
   
 .comment-content {
@@ -276,12 +272,10 @@
   color: black;
   text-align: left;
   font-size: 17px;
-  /* margin-bottom: 10px; */
 }
 
   .comment-box {
     width: 70%;
-    /* background-color: #81e0ff; */
     margin: 5vh 0;
     text-align: center;
   }
