@@ -7,15 +7,35 @@
 .login-red-btn {
   width: 100%;
   background-color: #41d0ff;
-  border-radius: 100px;
   border: 1px solid #41d0ff;
   color: #fff;
-  line-height: 48px;
   font-size: 14px;
   cursor: pointer;
+  text-decoration: none;
+  padding: 6px 70px;
+  font-size: 16px;
+  border-radius: 100px;
+  font-weight: bolder;
+}
+
+
+.login-red-btn:hover {
+  background: transparent;
+  background-color:  #1cb3e6;
+  color: white;
+  transition: 0.4s;
 }
 
 .login-flash-message {
   text-align: center;
   color: red;
 }
+/* .login-red-btn:hover{
+  height: 50px;
+  width: 300px;
+  margin: 0 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #dd7069;
+  color: #FFFF;
+} */
