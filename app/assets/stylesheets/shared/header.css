@@ -201,9 +201,7 @@
 
 
 @media screen and (min-width:367px) and ( max-width:649px){
-  body {
-    /* background-color: aqua; */
-  }
+
   .nav ul li a {
     color: white;
     background-color: #81e0ff;
@@ -227,7 +225,6 @@
   }
 
   .lists-right {
-    /* display: flex; */
     list-style: none;
     align-items: flex-end;
   }
@@ -339,3 +336,4 @@
     font-weight: bold;
     /* margin-left:10px ; */
   }
+}
