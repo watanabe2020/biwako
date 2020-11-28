@@ -425,7 +425,6 @@ header {
   height: 2vh;
   width: 2vh;
   margin-right: 0.5vw;
-  
 }
 
 .star-count {
@@ -438,21 +437,6 @@ header {
 
 /* //商品一覧 */
 
-.good-icon {
-  width: 70px;
-  margin-left: 30px;
-}
-.good-icon2 {
-  width: 70px;
-  margin-left:30px;
-
-}
-.good-icon3 {
-  width: 70px;
-  margin-left:10px;
-  margin-right:10px;
-  margin-top:5px;
-}
 
 .purchase-btn-icon {
   width: 50%;
@@ -531,7 +515,6 @@ header {
   border-top-style:none; 
   border-left-style:none; 
   border-right:none; 
-
 }
 
 .title_border2{
@@ -1162,6 +1145,568 @@ li{
 }
 
 
+@media screen and (min-width:0px) and ( max-width:450px)  {
+  .icons{
+  display: block;
+  }
+  .good-icon {
+    width: 30px;
+  }
+  .good-icon2 {
+    width: 30px;
+  }
+
+.item-name{
+    font-size: 10px;
+    margin-bottom: 5px;
+  // display: none;
+}
+  .star-icon {
+    height: 1vh;
+    width: 2vh;
+    margin-right: 0.5vw;
+  }
+
+  .icons-img1 img{
+    width: 8px;
+    margin-right:10px;
+  }
+  .icons-img2 img{
+    width: 9px;
+    margin-right:10px;
+  }
+  .icons-img3 img{
+    width: 8px;
+    margin-right:10px;
+  }
+  
+  .star-count {
+    font-size: 10px;
+    color: #217aff;
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+.item_time{
+  display:none;
+}
+
+  .item-lists > .list {
+    width: 13vh;
+    padding: 1vw;
+    /* margin: 0px; */
+    background-color: #fff;
+}
+
+.item-img {
+  width: 12.5vh;
+  height: 12.5vh;
+}
+
+
+
+.nannko {
+  position: absolute;
+  /*絶対配置*/
+  top: 60%;
+  left: 5%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.nannko a {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 10px 40px;
+  font-size: 15px;
+  border-radius: 100px;
+}
+
+.nannko a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  color: white;
+  transition: 0.4s;
+}
+
+.hokko {
+  position: absolute;
+  /*絶対配置*/
+  top: 23%;
+  left: 33%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.hokko a {
+  color: white;
+  background-color: #81e0ff;
+  text-decoration: none;
+  padding: 10px 40px;
+  font-size: 8px;
+  border-radius: 100px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hokko a:hover {
+  background: transparent;
+  background-color: #1bbef5;
+  color: white;
+  transition: 0.4s;
+}
+
+.item-contents>.title2 {
+  color: #41d0ff;;
+  font-size: 20px;
+  line-height: 1.4;
+  width: auto;
+  font-weight: bold;
+  border-top-style:none; 
+  border-left-style:none; 
+  border-right:none; 
+}
+
+.said_nav ul li a {
+  display: none;
+}
+
+
+.top_biwako{
+  padding: 5vh 15vw;
+  position: relative;
+  width: 80%;
+}
+
+.hidden{
+  display: none;
+  width: 200px;
+  position: absolute;
+  right: 370px;
+  top: 27%;
+  left: -10%;
+}
+
+.background-nannko{
+  border: solid 2px #72d7f8;
+  color: #41d0ff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 100px;
+  font-weight: bold;
+  width: 110px; 
+  text-align: center;
+  left: -120px;
+  top: 60px;
+  position: absolute;
+  user-select: none;
+  display: none;
+}
+.background-hokko{
+  border: solid 2px #72d7f8;
+  color: #41d0ff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 100px;
+  font-weight: bold;
+  width: 110px;
+  text-align: center;
+  left: -120px;
+  top: 60px;
+  position: absolute;
+  user-select: none;
+  display: none;
+}
+
+.nannko {
+position: absolute;
+/*絶対配置*/
+top: 60%;
+left: 5%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.nannko a {
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 10px 40px;
+font-size: 8px;
+border-radius: 100px;
+}
+
+.nannko a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.hokko {
+position: absolute;
+/*絶対配置*/
+top: 23%;
+left: 33%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.hokko a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 10px 40px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hokko a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.hamaotu {
+position: absolute;
+/*絶対配置*/
+top: 62%;
+left: -8%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.hamaotu a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hamaotu a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.katata {
+position: absolute;
+/*絶対配置*/
+top: 26%;
+left: 15%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.katata a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.katata a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.yabasi {
+position: absolute;
+/*絶対配置*/
+top: 63%;
+left: 23%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.yabasi a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.yabasi a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.seta {
+position: absolute;
+/*絶対配置*/
+top: 85%;
+left: 10%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.seta a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.seta a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.kihama {
+position: absolute;
+/*絶対配置*/
+top: 33%;
+left: 31%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.kihama a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.kihama a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.karasaki {
+position: absolute;
+/*絶対配置*/
+top: 42%;
+left: 5%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.karasaki a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.karasaki a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+// 北湖
+
+
+.okinosima {
+position: absolute;
+/*絶対配置*/
+top: 73%;
+left: 25%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.okinosima a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.okinosima a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.takasima {
+position: absolute;
+/*絶対配置*/
+top: 45%;
+left: 7%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.takasima a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.takasima a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.hikone {
+position: absolute;
+/*絶対配置*/
+top: 50%;
+left: 40%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.hikone a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hikone a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.oomimaiko {
+position: absolute;
+/*絶対配置*/
+top: 63%;
+left: -10%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.oomimaiko a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.oomimaiko a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.nagahama {
+position: absolute;
+/*絶対配置*/
+top: 28%;
+left: 51%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.nagahama a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nagahama a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+.okubiwako {
+position: absolute;
+/*絶対配置*/
+top: 2%;
+left: 25%;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+.okubiwako a {
+color: white;
+background-color: #81e0ff;
+text-decoration: none;
+padding: 5px 10px;
+font-size: 8px;
+border-radius: 100px;
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.okubiwako a:hover {
+background: transparent;
+background-color: #1bbef5;
+color: white;
+transition: 0.4s;
+}
+
+  }
 
 
 
@@ -1169,21 +1714,41 @@ li{
 
 
 
-
-
-
-
-
-
-
-
-
-/* medium screen */
-@media (min-width: 300px) {
+@media screen and (min-width:451px) and ( max-width:600px)  {
   body {
     // background-color:red;
   }
 
+  .good-icon {
+    width: 70px;
+    margin-left: 30px;
+  }
+  .good-icon2 {
+    width: 70px;
+    margin-left:30px;
+  }
+  
+  .good-icon3 {
+    width: 70px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:5px;
+  }
+
+  .item-contents>.title2 {
+    color: #41d0ff;;
+    font-size: 20px;
+    line-height: 1.4;
+    width: auto;
+    font-weight: bold;
+    border-top-style:none; 
+    border-left-style:none; 
+    border-right:none; 
+  }
+  
+  .said_nav ul li a {
+    display: none;
+  }
 
   
   .top_biwako{
@@ -1216,6 +1781,7 @@ li{
     top: 60px;
     position: absolute;
     user-select: none;
+    display: none;
   }
   .background-hokko{
     border: solid 2px #72d7f8;
@@ -1232,6 +1798,7 @@ li{
     top: 60px;
     position: absolute;
     user-select: none;
+    display: none;
   }
   
   .nannko {
@@ -1641,8 +2208,7 @@ li{
 
 
 
-/* medium screen */
-@media (min-width: 600px) {
+@media screen and (min-width:601px) and ( max-width:799px){
 
   .my_img{
     width: 20%;
@@ -1688,7 +2254,7 @@ li{
     width: 200px;
     position: absolute;
     right: 370px;
-    top: 22%;
+    top: 25%;
     left: -2%;
   }
 
@@ -1871,7 +2437,7 @@ li{
   position: absolute;
   /*絶対配置*/
   top: 33%;
-  left: 31%;
+  left: 36%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -2252,10 +2818,22 @@ li{
 
 
 /* large screen */
-@media (min-width: 850px) {
+@media screen and (min-width:800px){
   body {
     // background-color:green;
   }
+
+  .said_nav ul li a {
+    border: solid 2px #72d7f8;
+    color: #41d0ff;;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 100px;
+    font-weight: bold;
+  }
+
 .nannko {
   position: absolute;
   /*絶対配置*/
@@ -2422,7 +3000,7 @@ li{
   position: absolute;
   /*絶対配置*/
   top: 33%;
-  left: 31%;
+  left: 36%;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
@@ -2832,5 +3410,21 @@ li{
   margin-left: 180px;
   position: relative;
   width: 80%;
+}
+
+.good-icon {
+  width: 70px;
+  margin-left: 30px;
+}
+.good-icon2 {
+  width: 70px;
+  margin-left:30px;
+}
+
+.good-icon3 {
+  width: 70px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:5px;
 }
 }
