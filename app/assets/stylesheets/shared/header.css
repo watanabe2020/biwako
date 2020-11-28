@@ -121,8 +121,8 @@
 }
 
 .rogo_biwako {
-  width: 70px;
-  height: 100px;
+  width: 90px;
+  height: auto;
   color: white;
   font-size: 30px;
   margin-top: 10px;
@@ -188,8 +188,8 @@
   }
 
   .rogo_biwako {
-    width: 50px;
-    height: 70px;
+       width: 90px;
+    height: auto;
     color: white;
     font-size: 30px;
     margin-top: 10px;
