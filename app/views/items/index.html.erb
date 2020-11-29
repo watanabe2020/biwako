@@ -33,8 +33,10 @@
 
           <div class = "icons">
             <h3 class='item-name'>
+            <div class = "icons-hidden">
               <span class='icons-img2'><%= image_tag 'icons2.png'  %></span>
                 <%= item.comment %>
+            </div>
             </h3>
           </div>
 
@@ -67,7 +69,7 @@
                   <% end %>
                   <span class='star-count'><%= item.favorites.count %></span>
                 </div>
-                </div>
+</div>
           </div>
         </div>
     </li>

@@ -1146,6 +1146,10 @@ li{
 
 
 @media screen and (min-width:0px) and ( max-width:450px)  {
+.icons-hidden{
+  display:none;
+}
+
   .icons{
   display: block;
   }
