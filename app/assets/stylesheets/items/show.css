@@ -12,13 +12,6 @@
   font-size: 25px;
 }
 
-/* .item-box-img {
-  height: 50vh;
-  width: 60vw;
-  min-height: 605px;
-  object-fit: contain;
-} */
-
 .item-price-box {
   margin: 25px 0px;
   display: flex;
@@ -110,14 +103,11 @@
 .favorite-btn {
   border-radius: 40px;
   width: 170px;
-  /* min-width: 200px; */
   color: #217aff;
   border: 1px solid #217aff;
   display: flex;
   justify-content: center;
-  /* border-radius: 10px; */
   align-items: center;
-  /* margin-right: 20px; */
 }
 
 .comment-box {
