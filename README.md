@@ -9,7 +9,7 @@
 
   ## URL
 
-  SAISIN 'http://3.113.187.249:3000/'
+  SAISIN 'http://biwakosaisin.com/'
 
   ## 制作背景
 
