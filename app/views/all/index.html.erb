@@ -9,7 +9,7 @@
     <% @items.each do |item| %>
     <li class='list'>
       <h3 class='item_time'>
-        <%=  l item.created_at%>
+        <%= l item.created_at%>
       </h3>
       <div class='item-img-content'>
         <%=link_to (image_tag item.image, class: "item-img" if item.image.attached?), item_path(item.id) %>
