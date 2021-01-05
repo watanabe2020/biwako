@@ -2,7 +2,17 @@
 <html>
 
 <head>
-  <title>SAISIN みんなで作る琵琶湖アプリ</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2VF8PRZMJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M2VF8PRZMJ');
+</script>
+
+  <title>SAISIN </title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
@@ -16,6 +26,8 @@
 
 <body>
   <%= yield %>
+
+
 </body>
 
 </html>
