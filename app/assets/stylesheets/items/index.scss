@@ -500,6 +500,21 @@ header {
   margin-bottom: 20px;
 }
 
+.news-border{
+  color: #41d0ff;;
+  font-size: 26px;
+  line-height: 1.4;
+  width: auto;
+  // font-weight: bold;
+  padding-bottom: 10px;
+  border: solid 1px #72d7f8;
+  border-top-style:none; 
+  border-left-style:none; 
+  border-right:none; 
+  width: 90%;
+  margin-bottom: 20px;
+}
+
 .border-comment{
   color: #41d0ff;;
   font-size: 26px;
@@ -513,6 +528,18 @@ header {
   border-right:none; 
   width: 100%;
   margin-bottom: 20px;
+}
+
+.news-comment{
+  color: #000;
+  font-size: 14px;
+  line-height: 1.4;
+  width: auto;
+  padding-top: 10px;
+  border-top-style:none; 
+  border-left-style:none; 
+  border-right:none; 
+  width: 100%;
 }
 
 // 場所
@@ -530,7 +557,7 @@ header {
 .nannko a {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   color: white;
-  background-color: #81e0ff;
+  background-: #81e0ff;
   text-decoration: none;
   padding: 15px 70px;
   font-size: 22px;
