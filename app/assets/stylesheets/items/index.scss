@@ -1686,10 +1686,7 @@ transition: 0.4s;
 
 
 @media screen and (min-width:301px) and ( max-width:600px)  {
-  body {
-    // background-color:red;
-  }
-
+  
   .good-icon {
     width: 70px;
     margin-left: 30px;
@@ -2224,9 +2221,7 @@ transition: 0.4s;
   }
   
 
-  body {
-    // background-color: #217aff;
-  }
+ 
 
   .hidden {
     display: none;
@@ -2783,9 +2778,6 @@ li{
 
 /* large screen */
 @media screen and (min-width:800px){
-  body {
-    // background-color:green;
-  }
 
   .profile-li{
     margin-top:10px;
