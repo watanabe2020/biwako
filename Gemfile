@@ -84,3 +84,5 @@ end
   gem 'rails-i18n'
 
   gem 'jquery-rails'
+
+  gem 'meta-tags'
