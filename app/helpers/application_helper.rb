@@ -24,7 +24,7 @@ module ApplicationHelper
       },
       twitter: {
         card: 'summary',
-        site: '天空人@がちキャン△(@tenkuucir)です',
+        site: '@tenkuucir',
       }
     }
   end
