@@ -6,7 +6,7 @@ module ApplicationHelper
       reverse: true,
       charset: 'utf-8',
       description: '釣れた結果ではなく、琵琶湖の環境をみんなで共有するwebサイト!!リアルタイムの詳細な琵琶湖の環境を投稿でき、共有しするwebサイト！アングラーみんなでバスフィッシングを盛り上げていきたい思いで制作しました。',
-      keywords: '滋賀県,琵琶湖,釣り場,釣果情報,最新,琵琶湖ポイント,ポイント,SAISIN',
+      keywords: '滋賀県,琵琶湖,琵琶湖ポイント,SAISIN',
       canonical: request.original_url,
       separator: '|',
       icon: [
