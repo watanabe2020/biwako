@@ -1,3 +1,4 @@
+// リストのJSもしかしたらTESTのほうかもしれないいらんかも
 document.addEventListener('DOMContentLoaded', function () {
 const open = document.getElementById('open')
 const close = document.getElementById('close')
